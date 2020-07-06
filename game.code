@@ -1,0 +1,3388 @@
+contract disassembler {
+
+    function FUNC_0ABC67B5( uint256 arg0) public return ()
+    {
+        require((uint160(msg.sender) == uint160(uint160(owner))));
+        owner = uint160(arg0);
+        return();
+    }
+
+    function FUNC_0EA901D2( uint256 arg0) public return ()
+    {
+        var3 = func_00005DCD();
+        if ((extcodesize(msg.sender) == 0x0)) 
+        {
+
+            //ISSUE:WARNING:tx.origin shouldn't be used to for privilege control
+            if ((uint160(tx.origin) == uint160(msg.sender))) 
+            {
+
+                //ISSUE:WARNING:Block timestamp is referred.
+                var9 = block.timestamp;
+                var10 = func_00005DF1();
+                mstore(0x40,0x500);
+                mstore(0x280,mapping_0x20[uint160(uint160(arg0))].member_0x0);
+                mstore(0x2A0,uint160(uint160(uint160(mapping_0x20[uint160(uint160(arg0))].member_0x1))));
+                mstore(0x2C0,mapping_0x20[uint160(uint160(arg0))].member_0x2);
+                mstore(0x2E0,mapping_0x20[uint160(uint160(arg0))].member_0x3);
+                mstore(0x300,mapping_0x20[uint160(uint160(arg0))].member_0x4);
+                mstore(0x320,mapping_0x20[uint160(uint160(arg0))].member_0x5);
+                mstore(0x340,mapping_0x20[uint160(uint160(arg0))].member_0x6);
+                mstore(0x360,mapping_0x20[uint160(uint160(arg0))].member_0x7);
+                mstore(0x380,mapping_0x20[uint160(uint160(arg0))].member_0x8);
+                mstore(0x3A0,mapping_0x20[uint160(uint160(arg0))].member_0x9);
+                mstore(0x3C0,mapping_0x20[uint160(uint160(arg0))].member_0xA);
+                mstore(0x3E0,mapping_0x20[uint160(uint160(arg0))].member_0xB);
+                mstore(0x400,mapping_0x20[uint160(uint160(arg0))].member_0xC);
+                mstore(0x420,mapping_0x20[uint160(uint160(arg0))].member_0xD);
+                mstore(0x440,mapping_0x20[uint160(uint160(arg0))].member_0xE);
+                mstore(0x460,mapping_0x20[uint160(uint160(arg0))].member_0xF);
+                mstore(0x480,mapping_0x20[uint160(uint160(arg0))].member_0x10);
+                mstore(0x4A0,mapping_0x20[uint160(uint160(arg0))].member_0x11);
+                mstore(0x4C0,uint160(uint160(uint160(mapping_0x20[uint160(uint160(arg0))].member_0x12))));
+                mstore(0x4E0,mapping_0x20[uint160(uint160(arg0))].member_0x13);
+                var10 = 0x280;
+                var12 = sload(0x14);
+
+                //ISSUE:WARNING:Block timestamp is referred.
+                var13 = (block.timestamp - startTime);
+                assert(sload(0x14));
+                temp94 = (var13 / var12);
+                var11 = temp94;
+                var12 = (sload(0x18) - var9);
+                if ((sload(0x18) > var9)) 
+                {
+                    var13 = 0x0;
+                    var14 = 0x0;
+                    var15 = 0x0;
+label_0000214B:
+                    temp95 = mload((0x0 + var10));
+                    if ((mapping_0x27[temp95] < var15)) 
+                    {
+label_00002217:
+                        var15 = func_00005EB7();
+                        temp97 = mload((0x0 + var10));
+                        mstore(0x40,0x580);
+                        mstore(0x500,mapping_0x21[temp97].member_0x0);
+                        mstore(0x520,mapping_0x21[temp97].member_0x1);
+                        mstore(0x540,mapping_0x21[temp97].member_0x2);
+                        mstore(0x560,mapping_0x21[temp97].member_0x3);
+                        var15 = 0x500;
+                        var16 = func_00005DCD();
+                        temp99 = mload((0x0 + var10));
+                        var17 = mapping_0x26[temp99].member_0x0;
+                        var18 = var16;
+                        assert((0x0 < 0x10));
+                        temp101 = (0x0 + var18);
+                        mstore(temp101,var17);
+                        temp102 = mload((0x0 + var10));
+                        var17 = mapping_0x26[temp102].member_0x1;
+                        var18 = var16;
+                        assert((0x1 < 0x10));
+                        temp104 = (0x20 + var18);
+                        mstore(temp104,var17);
+                        temp105 = mload((0x0 + var10));
+                        if ((temp105 > 0x0)) 
+                        {
+label_000022F1:
+                            temp106 = mload((0x0 + var15));
+                            var17 = (temp106 + 0x1);
+                            var18 = var16;
+                            assert((0x2 < 0x10));
+                            temp107 = (0x40 + var18);
+                            mstore(temp107,var17);
+                            var17 = mload((0x20 + var15));
+                            var18 = var16;
+                            assert((0x3 < 0x10));
+                            temp108 = (0x60 + var18);
+                            mstore(temp108,var17);
+                            var17 = var13;
+                            var18 = var16;
+                            assert((0x4 < 0x10));
+                            temp109 = (0x80 + var18);
+                            mstore(temp109,var17);
+                            var17 = (var14 - var13);
+                            var18 = var16;
+                            assert((0x5 < 0x10));
+                            temp110 = (0xA0 + var18);
+                            mstore(temp110,var17);
+                            var17 = var11;
+                            var18 = var16;
+                            assert((0x6 < 0x10));
+                            temp111 = (0xC0 + var18);
+                            mstore(temp111,var17);
+                            var17 = roundId;
+                            var18 = var16;
+                            assert((0x7 < 0x10));
+                            temp112 = (0xE0 + var18);
+                            mstore(temp112,var17);
+                            var17 = MAPPING_7519952B[roundId];
+                            var18 = var16;
+                            assert((0x8 < 0x10));
+                            temp114 = (0x100 + var18);
+                            mstore(temp114,var17);
+                            var17 = balance(uint160(this.address));
+                            var18 = var16;
+                            assert((0x9 < 0x10));
+                            temp115 = (0x120 + var18);
+                            mstore(temp115,var17);
+                            var17 = MAPPING_9FF95193[var11];
+                            var18 = var16;
+                            assert((0xA < 0x10));
+                            temp117 = (0x140 + var18);
+                            mstore(temp117,var17);
+                            return();
+                        }
+                        else
+                        {
+                            goto label_000022F1;
+                        }
+                    }
+                    else
+                    {
+label_0000216E:
+                        var16 = func_00005EB7();
+                        temp118 = mload((0x0 + var10));
+                        var20 = var15;
+                        assert((var15 < mapping_0x27[temp118]));
+                        mstore(0x0,var19);
+                        temp120 = keccak256(0x0,0x20);
+                        mstore(0x40,0x580);
+                        mstore(0x500,mapping_0x21[sload((temp120 + var20))].member_0x0);
+                        mstore(0x520,mapping_0x21[sload((temp120 + var20))].member_0x1);
+                        mstore(0x540,mapping_0x21[sload((temp120 + var20))].member_0x2);
+                        mstore(0x560,mapping_0x21[sload((temp120 + var20))].member_0x3);
+                        temp122 = mload(0x520);
+                        var14 = (var14 + temp122);
+                        temp123 = mload(0x520);
+                        if ((var13 > temp123)) 
+                        {
+                            var15 = (0x1 + var15);
+                            goto label_0000214B;
+                        }
+                        else
+                        {
+                            temp124 = mload(0x520);
+                            var13 = temp124;
+                            var15 = (0x1 + var15);
+                            goto label_0000214B;
+                        }
+                    }
+                }
+                else
+                {
+                    var12 = 0x0;
+                    var13 = 0x0;
+                    var14 = 0x0;
+                    var15 = 0x0;
+                    temp125 = mload(0x280);
+                    if ((mapping_0x27[temp125] < 0x0)) 
+                    {
+                        goto label_00002217;
+                    }
+                    else
+                    {
+                        goto label_0000216E;
+                    }
+                }
+            }
+            else
+            {
+                mstore(0x280,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                mstore(0x284,0x20);
+                mstore(0x2A4,0x11);
+                mstore(0x2C4,0x736F7272792C2068756D616E206F6E6C79000000000000000000000000000000);
+                revert(0x280,0x64);
+            }
+        }
+        else
+        {
+            mstore(0x280,0x8C379A000000000000000000000000000000000000000000000000000000000);
+            mstore(0x284,0x20);
+            mstore(0x2A4,0x11);
+            mstore(0x2C4,0x736F7272792068756D616E73206F6E6C79000000000000000000000000000000);
+            revert(0x280,0x64);
+        }
+    }
+
+    function FUNC_18F6CA0A() public return ()
+    {
+        if ((extcodesize(msg.sender) == 0x0)) 
+        {
+
+            //ISSUE:WARNING:tx.origin shouldn't be used to for privilege control
+            if ((uint160(tx.origin) == uint160(msg.sender))) 
+            {
+                var3 = func_00001402();
+                return();
+            }
+            else
+            {
+                mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                mstore(0x84,0x20);
+                mstore(0xA4,0x11);
+                mstore(0xC4,0x736F7272792C2068756D616E206F6E6C79000000000000000000000000000000);
+                revert(0x80,0x64);
+            }
+        }
+        else
+        {
+            mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+            mstore(0x84,0x20);
+            mstore(0xA4,0x11);
+            mstore(0xC4,0x736F7272792068756D616E73206F6E6C79000000000000000000000000000000);
+            revert(0x80,0x64);
+        }
+    }
+
+    function FUNC_1AA0DCF5( uint256 arg0) public return (var0,var1)
+    {
+        return(mapping_0x26[arg0].member_0x0,mapping_0x26[arg0].member_0x1);
+    }
+
+    function FUNC_1E3A2137( uint256 arg0,uint256 arg1) public return (var0)
+    {
+        assert((arg1 < mapping_0x32[arg0]));
+        mstore(0x0,var4);
+        temp133 = keccak256(0x0,0x20);
+        return(sload((temp133 + arg1)));
+    }
+
+    function setTokenAddress( address arg0) public return ()
+    {
+        require((uint160(msg.sender) == uint160(uint160(owner))));
+        tokenAddr = uint160(arg0);
+        sstore(0x12,uint160(arg0));
+        return();
+    }
+
+    function FUNC_2BC9D5A1( uint256 arg0) public return ()
+    {
+        require((uint160(msg.sender) == uint160(uint160(owner))));
+        dev = uint160(arg0);
+        return();
+    }
+
+    function FUNC_2FE0BB63( uint256 arg0,uint256 arg1) public return ()
+    {
+        require((uint160(msg.sender) == uint160(uint160(dev))));
+        assert((arg1 < 0x3));
+        sstore((arg1 + 0x37),uint160(arg0));
+        return();
+    }
+
+    function FUNC_30B7B765( uint256 arg0) public return (var0)
+    {
+        assert((arg0 < 0x8));
+        return(sload((arg0 + 0x7)));
+    }
+
+    function getUserInfoById( uint256 arg0) public return ()
+    {
+        var3 = func_00005DCD();
+        var8 = func_00005DF1();
+        mstore(0x40,0x300);
+        mstore(0x80,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x0);
+        mstore(0xA0,uint160(uint160(uint160(mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x1))));
+        mstore(0xC0,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x2);
+        mstore(0xE0,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x3);
+        mstore(0x100,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x4);
+        mstore(0x120,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x5);
+        mstore(0x140,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x6);
+        mstore(0x160,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x7);
+        mstore(0x180,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x8);
+        mstore(0x1A0,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x9);
+        mstore(0x1C0,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0xA);
+        mstore(0x1E0,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0xB);
+        mstore(0x200,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0xC);
+        mstore(0x220,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0xD);
+        mstore(0x240,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0xE);
+        mstore(0x260,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0xF);
+        mstore(0x280,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x10);
+        mstore(0x2A0,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x11);
+        mstore(0x2C0,uint160(uint160(uint160(mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x12))));
+        mstore(0x2E0,mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x13);
+        var8 = 0x80;
+        temp141 = mload(0x80);
+        temp143 = mload(0x80);
+        if ((MAPPING_F92E04C0[temp143] > MAPPING_CDB0963E[temp141])) 
+        {
+            temp145 = mload(0x80);
+            var10 = MAPPING_F92E04C0[temp145];
+label_00002A77:
+            var9 = var10;
+            temp147 = mload((0x60 + var8));
+            var11 = func_00005A49(temp147);
+            var10 = var11;
+            var11 = func_00005DCD();
+            temp148 = mload((0x0 + var8));
+            var12 = mapping_0x26[temp148].member_0x0;
+            var13 = var11;
+            assert((0x0 < 0x10));
+            temp150 = (0x0 + var13);
+            mstore(temp150,var12);
+            temp151 = mload((0x0 + var8));
+            var12 = mapping_0x26[temp151].member_0x1;
+            var13 = var11;
+            assert((0x1 < 0x10));
+            temp153 = (0x20 + var13);
+            mstore(temp153,var12);
+            temp154 = mload((0x0 + var8));
+            var12 = (mapping_0x21[temp154].member_0x0 + 0x1);
+            var13 = var11;
+            assert((0x2 < 0x10));
+            temp156 = (0x40 + var13);
+            mstore(temp156,var12);
+            temp157 = mload((0x0 + var8));
+            var12 = mapping_0x21[temp157].member_0x1;
+            var13 = var11;
+            assert((0x3 < 0x10));
+            temp159 = (0x60 + var13);
+            mstore(temp159,var12);
+            var12 = mload((0x80 + var8));
+            var13 = var11;
+            assert((0x4 < 0x10));
+            temp160 = (0x80 + var13);
+            mstore(temp160,var12);
+            var12 = mload((0x60 + var8));
+            var13 = var11;
+            assert((0x5 < 0x10));
+            temp161 = (0xA0 + var13);
+            mstore(temp161,var12);
+            var12 = mload((0x40 + var8));
+            var13 = var11;
+            assert((0x6 < 0x10));
+            temp162 = (0xC0 + var13);
+            mstore(temp162,var12);
+            var12 = var9;
+            var13 = var11;
+            assert((0x7 < 0x10));
+            temp163 = (0xE0 + var13);
+            mstore(temp163,var12);
+            var12 = mload((0x200 + var8));
+            var13 = var11;
+            assert((0x8 < 0x10));
+            temp164 = (0x100 + var13);
+            mstore(temp164,var12);
+            var12 = mload((0x260 + var8));
+            var13 = var11;
+            assert((0x9 < 0x10));
+            temp165 = (0x120 + var13);
+            mstore(temp165,var12);
+            temp166 = mload((0x0 + var8));
+            temp168 = mload((0x0 + var8));
+            temp170 = mload((0x0 + var8));
+            var12 = ((mapping_0x21[temp170].member_0x1 - mapping_0x21[temp168].member_0x2) - mapping_0x21[temp166].member_0x3);
+            var13 = var11;
+            assert((0xA < 0x10));
+            temp172 = (0x140 + var13);
+            mstore(temp172,var12);
+            temp173 = mload((0x0 + var8));
+            var12 = mapping_0x21[temp173].member_0x2;
+            var13 = var11;
+            assert((0xB < 0x10));
+            temp175 = (0x160 + var13);
+            mstore(temp175,var12);
+            var12 = var10;
+            var13 = var11;
+            assert((0xC < 0x10));
+            temp176 = (0x180 + var13);
+            mstore(temp176,var12);
+            temp179 = mload((0x0 + var8));
+            temp178 = mload((0x220 + var8));
+            temp177 = mload((0x20 + var8));
+            return();
+        }
+        else
+        {
+            temp180 = mload(0x80);
+            var10 = MAPPING_CDB0963E[temp180];
+            goto label_00002A77;
+        }
+    }
+
+    function FUNC_3BC5F698( uint256 arg0) public return ()
+    {
+        // Please refer to main() for the functionality, Function Hash: 3BC5F698 
+    }
+
+    function FUNC_45F0A44F( uint256 arg0) public return (var0)
+    {
+        assert((arg0 < 0x6));
+        return(sload((arg0 + 0x1)));
+    }
+
+    function FUNC_5086A435( uint256 arg0) public return (var0)
+    {
+        assert((arg0 < sload(0x2A)));
+        mstore(0x0,0x2A);
+        temp187 = keccak256(0x0,0x20);
+        return(sload((temp187 + arg0)));
+    }
+
+    mapping(address => uint256) public MAPPING_5FA040EE
+
+    uint160 public tokenAddr;
+
+    mapping(address => uint256) public MAPPING_63753E6D
+
+    function getUserInfo( address arg0) public return ()
+    {
+        var3 = func_00005DCD();
+        var12 = func_00002CEC(arg0);
+        var11 = func_00005DF1();
+        mstore(0x40,0x300);
+        mstore(0x80,mapping_0x20[uint160(uint160(arg0))].member_0x0);
+        mstore(0xA0,uint160(uint160(uint160(mapping_0x20[uint160(uint160(arg0))].member_0x1))));
+        mstore(0xC0,mapping_0x20[uint160(uint160(arg0))].member_0x2);
+        mstore(0xE0,mapping_0x20[uint160(uint160(arg0))].member_0x3);
+        mstore(0x100,mapping_0x20[uint160(uint160(arg0))].member_0x4);
+        mstore(0x120,mapping_0x20[uint160(uint160(arg0))].member_0x5);
+        mstore(0x140,mapping_0x20[uint160(uint160(arg0))].member_0x6);
+        mstore(0x160,mapping_0x20[uint160(uint160(arg0))].member_0x7);
+        mstore(0x180,mapping_0x20[uint160(uint160(arg0))].member_0x8);
+        mstore(0x1A0,mapping_0x20[uint160(uint160(arg0))].member_0x9);
+        mstore(0x1C0,mapping_0x20[uint160(uint160(arg0))].member_0xA);
+        mstore(0x1E0,mapping_0x20[uint160(uint160(arg0))].member_0xB);
+        mstore(0x200,mapping_0x20[uint160(uint160(arg0))].member_0xC);
+        mstore(0x220,mapping_0x20[uint160(uint160(arg0))].member_0xD);
+        mstore(0x240,mapping_0x20[uint160(uint160(arg0))].member_0xE);
+        mstore(0x260,mapping_0x20[uint160(uint160(arg0))].member_0xF);
+        mstore(0x280,mapping_0x20[uint160(uint160(arg0))].member_0x10);
+        mstore(0x2A0,mapping_0x20[uint160(uint160(arg0))].member_0x11);
+        mstore(0x2C0,uint160(uint160(uint160(mapping_0x20[uint160(uint160(arg0))].member_0x12))));
+        mstore(0x2E0,mapping_0x20[uint160(uint160(arg0))].member_0x13);
+        var11 = 0x80;
+        temp194 = mload(0x80);
+        temp200 = mload(0x180);
+        temp196 = mload(0x80);
+        temp198 = mload(0x80);
+        var12 = ((((var12 + MAPPING_A76E76A0[temp198]) + MAPPING_9BE6D491[temp196]) + temp200) + MAPPING_EEF8EDA1[temp194]);
+        temp202 = mload(0xC0);
+        if ((temp202 > var12)) 
+        {
+            temp203 = mload(0x80);
+            if ((temp203 == 0x0)) 
+            {
+label_0000324D:
+                var9 = 0x0;
+label_00003251:
+
+                //ISSUE:WARNING:Block timestamp is referred.
+                var13 = block.timestamp;
+                var14 = 0x0;
+                temp258 = mload((0xA0 + var11));
+                if ((0x0 > temp258)) 
+                {
+                    goto label_0000327F;
+                }
+                else
+                {
+                    goto label_00003265;
+                }
+            }
+            else
+            {
+
+                //ISSUE:WARNING:Block timestamp is referred.
+                var13 = block.timestamp;
+                var14 = 0x0;
+                temp204 = mload(0x120);
+                if ((0x0 > temp204)) 
+                {
+                    temp205 = mload(0x80);
+                    temp207 = mload(0x80);
+                    if ((MAPPING_F92E04C0[temp207] > MAPPING_CDB0963E[temp205])) 
+                    {
+label_000032D3:
+                        temp209 = mload((0x0 + var11));
+                        var16 = MAPPING_F92E04C0[temp209];
+label_000032EC:
+                        var15 = var16;
+                        var16 = func_00005DCD();
+                        var17 = var12;
+                        var18 = var16;
+                        assert((0x0 < 0x10));
+                        temp211 = (0x0 + var18);
+                        mstore(temp211,var17);
+                        temp212 = mload((0x0 + var11));
+                        var17 = MAPPING_CBE3B04B[temp212];
+                        var18 = var16;
+                        assert((0x1 < 0x10));
+                        temp214 = (0x20 + var18);
+                        mstore(temp214,var17);
+                        var17 = mload((0x40 + var11));
+                        var18 = var16;
+                        assert((0x2 < 0x10));
+                        temp215 = (0x40 + var18);
+                        mstore(temp215,var17);
+                        var17 = mload((0x60 + var11));
+                        var18 = var16;
+                        assert((0x3 < 0x10));
+                        temp216 = (0x60 + var18);
+                        mstore(temp216,var17);
+                        var17 = mload((0xC0 + var11));
+                        var18 = var16;
+                        assert((0x4 < 0x10));
+                        temp217 = (0x80 + var18);
+                        mstore(temp217,var17);
+                        temp218 = mload((0x0 + var11));
+                        temp220 = mload((0x1C0 + var11));
+                        var17 = (temp220 + MAPPING_A76E76A0[temp218]);
+                        var18 = var16;
+                        assert((0x5 < 0x10));
+                        temp221 = (0xA0 + var18);
+                        mstore(temp221,var17);
+                        temp222 = mload((0x0 + var11));
+                        temp224 = mload((0x1E0 + var11));
+                        var17 = (temp224 + MAPPING_9BE6D491[temp222]);
+                        var18 = var16;
+                        assert((0x6 < 0x10));
+                        temp225 = (0xC0 + var18);
+                        mstore(temp225,var17);
+                        temp226 = mload((0x0 + var11));
+                        var17 = MAPPING_BB2F9366[temp226];
+                        var18 = var16;
+                        assert((0x7 < 0x10));
+                        temp228 = (0xE0 + var18);
+                        mstore(temp228,var17);
+                        temp229 = mload((0x0 + var11));
+                        var17 = MAPPING_7DD657AF[temp229];
+                        var18 = var16;
+                        assert((0x8 < 0x10));
+                        temp231 = (0x100 + var18);
+                        mstore(temp231,var17);
+                        var17 = mload((0x180 + var11));
+                        var18 = var16;
+                        assert((0x9 < 0x10));
+                        temp232 = (0x120 + var18);
+                        mstore(temp232,var17);
+                        temp233 = mload((0x0 + var11));
+                        var17 = MAPPING_EEF8EDA1[temp233];
+                        var18 = mload((0x1A0 + var11));
+                        var19 = var16;
+                        assert((0x6 < 0x10));
+                        var19 = mload((0xC0 + var19));
+                        var20 = var16;
+                        assert((0x5 < 0x10));
+                        temp235 = mload((0xA0 + var20));
+                        temp236 = (temp235 + var19);
+                        temp237 = (temp236 + var18);
+                        var17 = (temp237 + var17);
+                        var18 = var16;
+                        assert((0xA < 0x10));
+                        temp238 = (0x140 + var18);
+                        mstore(temp238,var17);
+                        var17 = mload((0x140 + var11));
+                        var18 = var16;
+                        assert((0xB < 0x10));
+                        temp239 = (0x160 + var18);
+                        mstore(temp239,var17);
+                        var17 = mload((0x80 + var11));
+                        var18 = var16;
+                        assert((0xC < 0x10));
+                        temp240 = (0x180 + var18);
+                        mstore(temp240,var17);
+                        var17 = mload((0x120 + var11));
+                        var18 = var16;
+                        assert((0xD < 0x10));
+                        temp241 = (0x1A0 + var18);
+                        mstore(temp241,var17);
+                        temp242 = mload((0x0 + var11));
+                        temp244 = mload((0x1A0 + var11));
+                        var17 = (temp244 + MAPPING_EEF8EDA1[temp242]);
+                        var18 = var16;
+                        assert((0xE < 0x10));
+                        temp245 = (0x1C0 + var18);
+                        mstore(temp245,var17);
+                        var17 = var9;
+                        var18 = var16;
+                        assert((0xF < 0x10));
+                        temp246 = (0x1E0 + var18);
+                        mstore(temp246,var17);
+                        temp249 = mload((0x0 + var11));
+                        temp248 = mload((0x220 + var11));
+                        temp247 = mload((0x200 + var11));
+                        return();
+                    }
+                    else
+                    {
+label_000032B7:
+                        temp250 = mload((0x0 + var11));
+                        var16 = MAPPING_CDB0963E[temp250];
+                        goto label_000032EC;
+                    }
+                }
+                else
+                {
+label_00003265:
+                    var15 = sload(0x14);
+                    temp252 = mload((0x80 + var11));
+                    var16 = (var13 - temp252);
+                    assert(sload(0x14));
+                    temp253 = (sload(0x14) - MOD(var16,var15));
+                    var14 = temp253;
+label_0000327F:
+                    temp254 = mload((0x0 + var11));
+                    temp256 = mload((0x0 + var11));
+                    if ((MAPPING_F92E04C0[temp256] > MAPPING_CDB0963E[temp254])) 
+                    {
+                        goto label_000032D3;
+                    }
+                    else
+                    {
+                        goto label_000032B7;
+                    }
+                }
+            }
+        }
+        else
+        {
+            temp259 = mload(0xC0);
+            temp260 = mload(0x80);
+            if ((temp260 == 0x0)) 
+            {
+                goto label_0000324D;
+            }
+            else
+            {
+                goto label_00003251;
+            }
+        }
+    }
+
+    uint256 public VAR_67103200;
+
+    function FUNC_6B3C3465( uint256 arg0,uint256 arg1) public return (var0)
+    {
+        assert((arg1 < mapping_0x27[arg0]));
+        mstore(0x0,var4);
+        temp265 = keccak256(0x0,0x20);
+        return(sload((temp265 + arg1)));
+    }
+
+    function FUNC_708A7126( uint256 arg0,uint256 arg1) public return ()
+    {
+        var2 = arg0;
+        var3 = arg1;
+        require((uint160(msg.sender) == uint160(uint160(dev))));
+        mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x10 = arg1;
+        var4 = (arg1 == 0x1);
+        if ((arg1 == 0x1)) 
+        {
+            if ((MAPPING_63753E6D[arg0] == 0x0)) 
+            {
+                goto label_000036F2;
+            }
+            else
+            {
+                goto label_0000374D;
+            }
+        }
+        else if (var4) 
+        {
+label_000036F2:
+            MAPPING_63753E6D[var2] = 0x1;
+            sstore(0x2A,(sload(0x2A) + 0x1));
+            mstore(0x0,0x2A);
+            temp272 = keccak256(0x0,0x20);
+            sstore((temp272 + sload(0x2A)),var2);
+            VAR_97F929F7 = (0x1 + VAR_97F929F7);
+            goto label_00003779;
+        }
+        else
+        {
+label_0000374D:
+            var4 = (var3 == 0x0);
+            if ((var3 == 0x0)) 
+            {
+                if ((0x0 > VAR_97F929F7)) 
+                {
+                    goto label_00003778;
+                }
+                else
+                {
+                    goto label_00003765;
+                }
+            }
+            else if (var4) 
+            {
+label_00003765:
+                VAR_97F929F7 = (VAR_97F929F7 - 0x1);
+label_00003778:
+label_00003779:
+                MAPPING_63753E6D[var2] = var3;
+                return();
+            }
+            else
+            {
+                MAPPING_63753E6D[var2] = var3;
+                return();
+            }
+        }
+    }
+
+    mapping(address => uint256) public MAPPING_7519952B
+
+    uint256 public startTime;
+
+    mapping(address => uint256) public MAPPING_7DD657AF
+
+    function FUNC_810EC5CB( uint256 arg0) public return ()
+    {
+        var2 = arg0;
+        require((uint160(msg.sender) == uint160(uint160(dev))));
+        var3 = 0x0;
+label_0000382D:
+        temp281 = mload(var2);
+        if ((temp281 < var3)) 
+        {
+            return();
+        }
+        else
+        {
+            var7 = var2;
+            var8 = var3;
+            temp282 = mload(var2);
+            assert((var3 < temp282));
+            temp283 = (0x20 * var8);
+            var7 = mload((temp283 + (0x20 + var7)));
+            assert(0x2386F26FC10000);
+            var6 = (var7 / 0x2386F26FC10000);
+            assert(0x5F5E100);
+            var4 = (MOD(var6,0x5F5E100) * 0x2710);
+            var8 = var2;
+            var9 = var3;
+            temp284 = mload(var2);
+            assert((var3 < temp284));
+            temp285 = (0x20 * var9);
+            var8 = mload((temp285 + (0x20 + var8)));
+            assert(0xD3C21BCECCEDA1000000);
+            temp287 = (MAPPING_CBE3B04B[(var8 / 0xD3C21BCECCEDA1000000)] + var4);
+            MAPPING_CBE3B04B[(var8 / 0xD3C21BCECCEDA1000000)] = temp287;
+            var6 = var2;
+            var7 = var3;
+            temp288 = mload(var2);
+            assert((var3 < temp288));
+            temp289 = (0x20 * var7);
+            var6 = mload((temp289 + (0x20 + var6)));
+            assert(0x5F5E100);
+            var4 = (MOD(var6,0x5F5E100) * 0x2710);
+            var9 = var2;
+            var10 = var3;
+            temp290 = mload(var2);
+            assert((var3 < temp290));
+            temp291 = (0x20 * var10);
+            var9 = mload((temp291 + (0x20 + var9)));
+            assert(0x5F5E100);
+            var8 = (var9 / 0x5F5E100);
+            assert(0x5F5E100);
+            temp293 = (MAPPING_CBE3B04B[MOD(var8,0x5F5E100)] + var4);
+            MAPPING_CBE3B04B[MOD(var8,0x5F5E100)] = temp293;
+            var3 = (0x1 + var3);
+            goto label_0000382D;
+        }
+    }
+
+    function FUNC_82883100( uint256 arg0) public return (var0)
+    {
+        var10 = arg0;
+
+        //ISSUE:WARNING:Block timestamp is referred.
+        var13 = block.timestamp;
+
+        //ISSUE:WARNING:Block timestamp is referred.
+        var14 = (block.timestamp > sload(0x18));
+
+        //ISSUE:WARNING:Block timestamp is referred.
+        if ((sload(0x18) > block.timestamp)) 
+        {
+            if (var14) 
+            {
+label_00003971:
+                var14 = 0x32;
+                if ((VAR_67103200 > 0x32)) 
+                {
+                    var15 = 0x0;
+                    var16 = 0x0;
+label_00003996:
+                    if ((var14 < var16)) 
+                    {
+label_000039DC:
+                        var16 = 0x0;
+label_000039E3:
+                        if ((var14 < var16)) 
+                        {
+                            sstore(0x18,(var13 + sload(0x16)));
+                            roundId = (0x1 + roundId);
+                            VAR_67103200 = 0x1;
+                            var12 = 0x1;
+                            goto label_00003B13;
+                        }
+                        else
+                        {
+                            var18 = var15;
+                            var19 = (MAPPING_7519952B[roundId] * mapping_0x20[uint160(uint160(uint160(mapping_0x1F[(VAR_C8ADAE4A - var16)].member_0x0)))].member_0x3);
+                            assert(var15);
+                            temp30 = (var19 / var18);
+                            mapping_0x20[uint160(uint160(uint160(mapping_0x1F[(VAR_C8ADAE4A - var16)].member_0x0)))].member_0x8 = (mapping_0x20[uint160(uint160(uint160(mapping_0x1F[(VAR_C8ADAE4A - var16)].member_0x0)))].member_0x8 + temp30);
+                            var16 = (0x1 + var16);
+                            goto label_000039E3;
+                        }
+                    }
+                    else
+                    {
+label_0000399F:
+                        var18 = var16;
+                        assert((var16 < mapping_0x32[roundId]));
+                        mstore(0x0,var17);
+                        temp32 = keccak256(0x0,0x20);
+                        var15 = (var15 + sload((temp32 + var18)));
+                        var16 = (0x1 + var16);
+                        goto label_00003996;
+                    }
+                }
+                else
+                {
+                    var14 = (VAR_67103200 - 0x1);
+                    var15 = 0x0;
+                    var16 = 0x0;
+                    if (((VAR_67103200 - 0x1) < 0x0)) 
+                    {
+                        goto label_000039DC;
+                    }
+                    else
+                    {
+                        goto label_0000399F;
+                    }
+                }
+            }
+            else
+            {
+label_00003ADF:
+                var14 = (var13 > sload(0x18));
+                if ((sload(0x18) > var13)) 
+                {
+                    if (var14) 
+                    {
+label_00003AF8:
+                        sstore(0x18,(var13 + sload(0x16)));
+                        if (var10) 
+                        {
+                            var12 = 0x0;
+label_00003B12:
+label_00003B13:
+                            return(var12);
+                        }
+                        else
+                        {
+                            return(0x1);
+                        }
+                    }
+                    else
+                    {
+                        return(var12);
+                    }
+                }
+                else if ((VAR_67103200 == 0x1)) 
+                {
+                    goto label_00003AF8;
+                }
+                else
+                {
+                    goto label_00003B12;
+                }
+            }
+        }
+        else if ((0x1 > VAR_67103200)) 
+        {
+            goto label_00003ADF;
+        }
+        else
+        {
+            goto label_00003971;
+        }
+    }
+
+    uint256 public roundId;
+
+    mapping(address => uint256) public MAPPING_8CD4DDA2
+
+    uint160 public owner;
+
+    uint160 public dev;
+
+    uint256 public VAR_922D0F7C;
+
+    uint256 public VAR_97F929F7;
+
+    mapping(address => uint256) public MAPPING_9BE6D491
+
+    mapping(address => uint256) public MAPPING_9FF95193
+
+    mapping(address => uint256) public MAPPING_A76E76A0
+
+    function FUNC_ADB910CF( uint256 arg0) public return ()
+    {
+        mstore(0x20,0x1F);
+        mstore(0x0,arg0);
+        temp304 = keccak256(0x0,0x40);
+        return();
+    }
+
+    function FUNC_B7BFAED6( uint256 arg0) public return ()
+    {
+        var2 = arg0;
+        require((uint160(msg.sender) == uint160(uint160(dev))));
+        var3 = 0x0;
+label_00003C8D:
+        temp308 = mload(var2);
+        if ((temp308 < var3)) 
+        {
+            return();
+        }
+        else
+        {
+            var7 = var2;
+            var8 = var3;
+            temp309 = mload(var2);
+            assert((var3 < temp309));
+            temp310 = (0x20 * var8);
+            var7 = mload((temp310 + (0x20 + var7)));
+            assert(0x4EE2D6D415B85ACEF8100000000);
+            var6 = (var7 / 0x4EE2D6D415B85ACEF8100000000);
+            assert(0x5F5E100);
+            var4 = (MOD(var6,0x5F5E100) * 0x5AF3107A4000);
+            var8 = var2;
+            var9 = var3;
+            temp311 = mload(var2);
+            assert((var3 < temp311));
+            temp312 = (0x20 * var9);
+            var8 = mload((temp312 + (0x20 + var8)));
+            assert(0x1D6329F1C35CA4BFABB9F5610000000000);
+            temp314 = (MAPPING_A76E76A0[(var8 / 0x1D6329F1C35CA4BFABB9F5610000000000)] + var4);
+            MAPPING_A76E76A0[(var8 / 0x1D6329F1C35CA4BFABB9F5610000000000)] = temp314;
+            var7 = var2;
+            var8 = var3;
+            temp315 = mload(var2);
+            assert((var3 < temp315));
+            temp316 = (0x20 * var8);
+            var7 = mload((temp316 + (0x20 + var7)));
+            assert(0xD3C21BCECCEDA1000000);
+            var6 = (var7 / 0xD3C21BCECCEDA1000000);
+            assert(0x5F5E100);
+            var4 = (MOD(var6,0x5F5E100) * 0x5AF3107A4000);
+            var8 = var2;
+            var9 = var3;
+            temp317 = mload(var2);
+            assert((var3 < temp317));
+            temp318 = (0x20 * var9);
+            var8 = mload((temp318 + (0x20 + var8)));
+            assert(0x1D6329F1C35CA4BFABB9F5610000000000);
+            temp320 = (MAPPING_9BE6D491[(var8 / 0x1D6329F1C35CA4BFABB9F5610000000000)] + var4);
+            MAPPING_9BE6D491[(var8 / 0x1D6329F1C35CA4BFABB9F5610000000000)] = temp320;
+            var7 = var2;
+            var8 = var3;
+            temp321 = mload(var2);
+            assert((var3 < temp321));
+            temp322 = (0x20 * var8);
+            var7 = mload((temp322 + (0x20 + var7)));
+            assert(0x5F5E100);
+            var6 = (var7 / 0x5F5E100);
+            assert(0x5F5E100);
+            var4 = (MOD(var6,0x5F5E100) * 0x5AF3107A4000);
+            var9 = var2;
+            var10 = var3;
+            temp323 = mload(var2);
+            assert((var3 < temp323));
+            temp324 = (0x20 * var10);
+            var9 = mload((temp324 + (0x20 + var9)));
+            assert(0x2386F26FC10000);
+            var8 = (var9 / 0x2386F26FC10000);
+            assert(0x5F5E100);
+            temp326 = (MAPPING_A76E76A0[MOD(var8,0x5F5E100)] + var4);
+            MAPPING_A76E76A0[MOD(var8,0x5F5E100)] = temp326;
+            var6 = var2;
+            var7 = var3;
+            temp327 = mload(var2);
+            assert((var3 < temp327));
+            temp328 = (0x20 * var7);
+            var6 = mload((temp328 + (0x20 + var6)));
+            assert(0x5F5E100);
+            var4 = (MOD(var6,0x5F5E100) * 0x5AF3107A4000);
+            var9 = var2;
+            var10 = var3;
+            temp329 = mload(var2);
+            assert((var3 < temp329));
+            temp330 = (0x20 * var10);
+            var9 = mload((temp330 + (0x20 + var9)));
+            assert(0x2386F26FC10000);
+            var8 = (var9 / 0x2386F26FC10000);
+            assert(0x5F5E100);
+            temp332 = (MAPPING_9BE6D491[MOD(var8,0x5F5E100)] + var4);
+            MAPPING_9BE6D491[MOD(var8,0x5F5E100)] = temp332;
+            var3 = (0x1 + var3);
+            goto label_00003C8D;
+        }
+    }
+
+    mapping(address => uint256) public MAPPING_BB2F9366
+
+    uint256 public stage;
+
+    function FUNC_C51B08E3( uint256 arg0) public return ()
+    {
+        mstore(0x20,0x21);
+        mstore(0x0,arg0);
+        temp336 = keccak256(0x0,0x40);
+        return();
+    }
+
+    uint256 public VAR_C8ADAE4A;
+
+    function FUNC_CB40BB5F() public return ()
+    {
+        // Please refer to main() for the functionality, Function Hash: CB40BB5F 
+    }
+
+    mapping(address => uint256) public MAPPING_CBE3B04B
+
+    mapping(address => uint256) public MAPPING_CDB0963E
+
+    function FUNC_E0F0B56B( uint256 arg0) public return ()
+    {
+        var2 = arg0;
+        if ((extcodesize(msg.sender) == 0x0)) 
+        {
+
+            //ISSUE:WARNING:tx.origin shouldn't be used to for privilege control
+            if ((uint160(tx.origin) == uint160(msg.sender))) 
+            {
+                var5 = msg.value;
+                if ((MAPPING_FC5F6081[msg.value] > 0x0)) 
+                {
+
+                    //ISSUE:WARNING:Block timestamp is referred.
+                    var6 = block.timestamp;
+                    var9 = (mapping_0x20[uint160(uint160(msg.sender))].member_0x0 > 0x0);
+                    if ((mapping_0x20[uint160(uint160(msg.sender))].member_0x0 > 0x0)) 
+                    {
+                        if (var9) 
+                        {
+label_00004217:
+                            if ((mapping_0x20[uint160(uint160(msg.sender))].member_0x0 == 0x0)) 
+                            {
+                                mstore(0xA0,var6);
+                                mstore(0xC0,(0x1000000000000000000000000 * uint160(uint160(msg.sender))));
+                                mstore(0xD4,var2);
+                                mstore(0x80,0x54);
+                                mstore(0x40,0xF4);
+                                temp381 = mload(0x80);
+                                temp382 = keccak256(0xA0,temp381);
+                                var11 = temp382;
+                                assert(0x5);
+                                temp383 = (VAR_F514CE36 + (MOD(var11,0x5) + 0x1));
+                                VAR_F514CE36 = temp383;
+                                mapping_0x20[uint160(uint160(msg.sender))].member_0x0 = VAR_F514CE36;
+                                mapping_0x20[uint160(uint160(msg.sender))].member_0x1 = uint160(msg.sender);
+                                mapping_0x20[uint160(uint160(msg.sender))].member_0x13 = var6;
+                                mapping_0x2E[VAR_F514CE36] = uint160(msg.sender);
+                                var7 = 0x1;
+                                goto label_000043F9;
+                            }
+                            else
+                            {
+                                var9 = (mapping_0x20[uint160(uint160(msg.sender))].member_0x2 == 0x0);
+                                if ((mapping_0x20[uint160(uint160(msg.sender))].member_0x2 == 0x0)) 
+                                {
+                                    if ((mapping_0x20[uint160(uint160(msg.sender))].member_0x3 < var5)) 
+                                    {
+                                        goto label_000043F8;
+                                    }
+                                    else
+                                    {
+                                        goto label_0000438B;
+                                    }
+                                }
+                                else if (var9) 
+                                {
+label_000043F8:
+label_000043F9:
+                                    mapping_0x21[mapping_0x20[uint160(uint160(msg.sender))].member_0x0].member_0x1 = (mapping_0x21[mapping_0x20[uint160(uint160(msg.sender))].member_0x0].member_0x1 + var5);
+                                    mapping_0x21[mapping_0x20[uint160(uint160(msg.sender))].member_0x0].member_0x3 = var5;
+                                    var9 = var5;
+                                    var10 = (mapping_0x20[uint160(uint160(msg.sender))].member_0x11 == 0x0);
+                                    if ((mapping_0x20[uint160(uint160(msg.sender))].member_0x11 == 0x0)) 
+                                    {
+                                        if ((0x64 > var2)) 
+                                        {
+                                            goto label_00004687;
+                                        }
+                                        else
+                                        {
+                                            goto label_0000445F;
+                                        }
+                                    }
+                                    else if (var10) 
+                                    {
+label_0000445F:
+                                        var10 = (var2 < mapping_0x20[uint160(uint160(msg.sender))].member_0x0);
+                                        if ((mapping_0x20[uint160(uint160(msg.sender))].member_0x0 < var2)) 
+                                        {
+                                            if (var10) 
+                                            {
+label_0000452F:
+                                                mapping_0x20[uint160(uint160(msg.sender))].member_0x11 = var2;
+                                                mapping_0x20[uint160(uint160(msg.sender))].member_0x12 = uint160(uint160(mapping_0x2E[var2]));
+                                                mapping_0x27[mapping_0x20[uint160(uint160(msg.sender))].member_0x11] = (mapping_0x27[mapping_0x20[uint160(uint160(msg.sender))].member_0x11] + 0x1);
+                                                mstore(0x0,temp374);
+                                                temp375 = keccak256(0x0,0x20);
+                                                sstore((temp375 + mapping_0x27[mapping_0x20[uint160(uint160(msg.sender))].member_0x11]),mapping_0x20[uint160(uint160(msg.sender))].member_0x0);
+                                                mapping_0x26[mapping_0x20[uint160(uint160(msg.sender))].member_0x11].member_0x0 = (0x1 + mapping_0x26[mapping_0x20[uint160(uint160(msg.sender))].member_0x11].member_0x0);
+                                                mapping_0x26[mapping_0x20[uint160(uint160(msg.sender))].member_0x11].member_0x1 = (mapping_0x26[mapping_0x20[uint160(uint160(msg.sender))].member_0x11].member_0x1 + var5);
+                                                var7 = (mapping_0x21[mapping_0x20[uint160(uint160(msg.sender))].member_0x0].member_0x0 + 0x1);
+                                                var9 = mapping_0x21[mapping_0x20[uint160(uint160(msg.sender))].member_0x0].member_0x1;
+                                                goto label_000046BE;
+                                            }
+                                            else
+                                            {
+label_000044C2:
+                                                mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                                                mstore(0x84,0x20);
+                                                mstore(0xA4,0x9);
+                                                mstore(0xC4,0x706964206572726F720000000000000000000000000000000000000000000000);
+                                                revert(0x80,0x64);
+                                            }
+                                        }
+                                        else if ((uint160(uint160(mapping_0x2E[var2])) == 0x0)) 
+                                        {
+                                            goto label_000044C2;
+                                        }
+                                        else
+                                        {
+                                            goto label_0000452F;
+                                        }
+                                    }
+                                    else
+                                    {
+label_00004687:
+                                        if ((0x64 > mapping_0x20[uint160(uint160(msg.sender))].member_0x11)) 
+                                        {
+                                            var11 = sload(0x14);
+                                            var12 = (var6 - startTime);
+                                            if (sload(0x14)) 
+                                            {
+label_000046D1:
+                                                temp346 = (var12 / var11);
+                                                MAPPING_9FF95193[temp346] = (MAPPING_9FF95193[temp346] + var5);
+                                                mapping_0x20[uint160(uint160(msg.sender))].member_0x3 = var5;
+                                                var13 = func_00005B84(var5,MAPPING_FC5F6081[var5]);
+                                                var11 = func_00005C2B(var13,0xA);
+                                                mapping_0x20[uint160(uint160(msg.sender))].member_0x2 = var11;
+                                                mapping_0x20[uint160(uint160(msg.sender))].member_0x5 = var6;
+                                                mapping_0x20[uint160(uint160(msg.sender))].member_0x4 = var6;
+                                                var10 = func_0000567E(mapping_0x20[uint160(uint160(msg.sender))].member_0x11,var9,var7,0x0);
+                                                var12 = FUNC_82883100(0x1);
+                                                if (var12) 
+                                                {
+                                                    mstore(0x40,0x100);
+                                                    mstore(0x80,uint160(msg.sender));
+                                                    mstore(0xA0,mapping_0x20[uint160(uint160(msg.sender))].member_0x0);
+                                                    mstore(0xC0,var5);
+                                                    mstore(0xE0,var6);
+                                                    VAR_C8ADAE4A = (0x1 + VAR_C8ADAE4A);
+                                                    temp350 = mload(0x80);
+                                                    mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x0 = uint160(temp350);
+                                                    temp351 = mload(0xA0);
+                                                    mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x1 = temp351;
+                                                    temp352 = mload(0xC0);
+                                                    mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x2 = temp352;
+                                                    temp353 = mload(0xE0);
+                                                    mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x3 = temp353;
+                                                    var13 = 0x64;
+                                                    var14 = (var5 * 0x2);
+                                                    if (0x64) 
+                                                    {
+label_0000489E:
+                                                        temp354 = (var14 / var13);
+                                                        var12 = temp354;
+                                                        if (((MAPPING_7519952B[roundId] + temp354) < sload(0x17))) 
+                                                        {
+                                                            MAPPING_7519952B[roundId] = (MAPPING_7519952B[roundId] + var12);
+label_00004908:
+                                                            mapping_0x32[roundId] = (mapping_0x32[roundId] + 0x1);
+                                                            mstore(0x0,temp357);
+                                                            temp358 = keccak256(0x0,0x20);
+                                                            sstore((temp358 + mapping_0x32[roundId]),var5);
+                                                            assert((0x0 < 0x3));
+                                                            var14 = uint160(sload(0x37));
+                                                            var16 = (var5 * 0x1E);
+                                                            assert(0x64);
+                                                            var12 = func_0000544A(var14,(var16 / 0x64));
+                                                            assert((0x1 < 0x3));
+                                                            var14 = uint160(sload(0x38));
+                                                            var16 = (var5 * 0x4);
+                                                            assert(0x64);
+                                                            var12 = func_0000544A(var14,(var16 / 0x64));
+                                                            assert((0x2 < 0x3));
+                                                            var14 = uint160(sload(0x39));
+                                                            var16 = (var5 * 0x2);
+                                                            assert(0x64);
+                                                            var12 = func_0000544A(var14,(var16 / 0x64));
+                                                            mstore(0x100,var5);
+                                                            mstore(0x120,var6);
+                                                            mstore(0x140,mapping_0x20[uint160(uint160(msg.sender))].member_0x11);
+                                                            log(0x100,0x60,0x37883E71C7814F604C938AC0749ACC04105652CF5348FE0DB9525B519E417D7D,uint160(msg.sender),mapping_0x20[uint160(uint160(msg.sender))].member_0x0);
+                                                            return();
+                                                        }
+                                                        else
+                                                        {
+                                                            MAPPING_7519952B[roundId] = sload(0x17);
+                                                            goto label_00004908;
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+label_0000489D:
+                                                        throw();
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    VAR_67103200 = (0x1 + VAR_67103200);
+                                                    var12 = sload(0x15);
+                                                    var13 = (0x2 * sload(0x13));
+                                                    var14 = var5;
+                                                    assert((0x2 * sload(0x13)));
+                                                    temp360 = (var14 / var13);
+                                                    temp361 = (temp360 * var12);
+                                                    sstore(0x18,(sload(0x18) + temp361));
+                                                    if (((var6 + sload(0x16)) > sload(0x18))) 
+                                                    {
+                                                        mstore(0x40,0x100);
+                                                        mstore(0x80,uint160(msg.sender));
+                                                        mstore(0xA0,mapping_0x20[uint160(uint160(msg.sender))].member_0x0);
+                                                        mstore(0xC0,var5);
+                                                        mstore(0xE0,var6);
+                                                        VAR_C8ADAE4A = (0x1 + VAR_C8ADAE4A);
+                                                        temp363 = mload(0x80);
+                                                        mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x0 = uint160(temp363);
+                                                        temp364 = mload(0xA0);
+                                                        mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x1 = temp364;
+                                                        temp365 = mload(0xC0);
+                                                        mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x2 = temp365;
+                                                        temp366 = mload(0xE0);
+                                                        mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x3 = temp366;
+                                                        var13 = 0x64;
+                                                        var14 = (var5 * 0x2);
+                                                        if (0x64) 
+                                                        {
+                                                            goto label_0000489E;
+                                                        }
+                                                        else
+                                                        {
+                                                            goto label_0000489D;
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        sstore(0x18,(var6 + sload(0x16)));
+                                                        mstore(0x40,0x100);
+                                                        mstore(0x80,uint160(msg.sender));
+                                                        mstore(0xA0,mapping_0x20[uint160(uint160(msg.sender))].member_0x0);
+                                                        mstore(0xC0,var5);
+                                                        mstore(0xE0,var6);
+                                                        VAR_C8ADAE4A = (0x1 + VAR_C8ADAE4A);
+                                                        temp368 = mload(0x80);
+                                                        mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x0 = uint160(temp368);
+                                                        temp369 = mload(0xA0);
+                                                        mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x1 = temp369;
+                                                        temp370 = mload(0xC0);
+                                                        mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x2 = temp370;
+                                                        temp371 = mload(0xE0);
+                                                        mapping_0x1F[(0x1 + VAR_C8ADAE4A)].member_0x3 = temp371;
+                                                        var13 = 0x64;
+                                                        var14 = (var5 * 0x2);
+                                                        if (0x64) 
+                                                        {
+                                                            goto label_0000489E;
+                                                        }
+                                                        else
+                                                        {
+                                                            goto label_0000489D;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            else
+                                            {
+label_000046D0:
+                                                throw();
+                                            }
+                                        }
+                                        else
+                                        {
+                                            mapping_0x26[mapping_0x20[uint160(uint160(msg.sender))].member_0x11].member_0x1 = (mapping_0x26[mapping_0x20[uint160(uint160(msg.sender))].member_0x11].member_0x1 + var5);
+label_000046BE:
+                                            var11 = sload(0x14);
+                                            var12 = (var6 - startTime);
+                                            if (sload(0x14)) 
+                                            {
+                                                goto label_000046D1;
+                                            }
+                                            else
+                                            {
+                                                goto label_000046D0;
+                                            }
+                                        }
+                                    }
+                                }
+                                else
+                                {
+label_0000438B:
+                                    mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                                    mstore(0x84,0x20);
+                                    mstore(0xA4,0xB);
+                                    mstore(0xC4,0x6E6F7420616C6C6F776564000000000000000000000000000000000000000000);
+                                    revert(0x80,0x64);
+                                }
+                            }
+                        }
+                        else
+                        {
+label_000041AA:
+                            mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                            mstore(0x84,0x20);
+                            mstore(0xA4,0x7);
+                            mstore(0xC4,0x706964203D203000000000000000000000000000000000000000000000000000);
+                            revert(0x80,0x64);
+                        }
+                    }
+                    else if ((mapping_0x20[uint160(uint160(msg.sender))].member_0x0 == 0x0)) 
+                    {
+                        var9 = (arg0 > 0x0);
+                        if ((arg0 > 0x0)) 
+                        {
+                            if (var9) 
+                            {
+                                goto label_00004217;
+                            }
+                            else
+                            {
+                                goto label_000041AA;
+                            }
+                        }
+                        else if ((arg0 == 0x64)) 
+                        {
+                            goto label_00004217;
+                        }
+                        else
+                        {
+                            goto label_000041AA;
+                        }
+                    }
+                    else if (var9) 
+                    {
+                        goto label_00004217;
+                    }
+                    else
+                    {
+                        goto label_000041AA;
+                    }
+                }
+                else
+                {
+                    mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                    mstore(0x84,0x20);
+                    mstore(0xA4,0x9);
+                    mstore(0xC4,0x666F7262696464656E0000000000000000000000000000000000000000000000);
+                    revert(0x80,0x64);
+                }
+            }
+            else
+            {
+                mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                mstore(0x84,0x20);
+                mstore(0xA4,0x11);
+                mstore(0xC4,0x736F7272792C2068756D616E206F6E6C79000000000000000000000000000000);
+                revert(0x80,0x64);
+            }
+        }
+        else
+        {
+            mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+            mstore(0x84,0x20);
+            mstore(0xA4,0x11);
+            mstore(0xC4,0x736F7272792068756D616E73206F6E6C79000000000000000000000000000000);
+            revert(0x80,0x64);
+        }
+    }
+
+    function FUNC_EA3B69FF( uint256 arg0,uint256 arg1) public return ()
+    {
+        var2 = arg0;
+        var3 = arg1;
+        require((uint160(msg.sender) == uint160(uint160(dev))));
+        if ((mapping_0x20[uint160(uint160(uint160(mapping_0x2E[arg0])))].member_0x0 > 0x0)) 
+        {
+            MAPPING_F92E04C0[arg0] = arg1;
+            var4 = (MAPPING_8CD4DDA2[arg0] == 0x0);
+            if ((MAPPING_8CD4DDA2[arg0] == 0x0)) 
+            {
+                if ((arg1 == 0x5)) 
+                {
+                    goto label_00004C23;
+                }
+                else
+                {
+                    goto label_00004C52;
+                }
+            }
+            else if (var4) 
+            {
+label_00004C23:
+                VAR_922D0F7C = (0x1 + VAR_922D0F7C);
+                MAPPING_8CD4DDA2[var2] = 0x5;
+                goto label_00004CC7;
+            }
+            else
+            {
+label_00004C52:
+                if ((MAPPING_8CD4DDA2[var2] == 0x5)) 
+                {
+                    var4 = (MAPPING_CDB0963E[var2] < 0x5);
+                    if ((0x5 < MAPPING_CDB0963E[var2])) 
+                    {
+                        goto label_00004C94;
+                    }
+                    else
+                    {
+                        goto label_00004C8F;
+                    }
+                }
+                else if (var4) 
+                {
+label_00004C8F:
+                    var4 = (var3 < 0x5);
+label_00004C94:
+                    if (var4) 
+                    {
+                        goto label_00004C9A;
+                    }
+                    else
+                    {
+                        goto label_00004CC6;
+                    }
+                }
+                else if (var4) 
+                {
+label_00004C9A:
+                    VAR_922D0F7C = (VAR_922D0F7C - 0x1);
+                    MAPPING_8CD4DDA2[var2] = 0x0;
+label_00004CC6:
+label_00004CC7:
+                    return();
+                }
+                else
+                {
+                    return();
+                }
+            }
+        }
+        else
+        {
+            mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+            mstore(0x84,0x20);
+            mstore(0xA4,0x5);
+            mstore(0xC4,0x6572726F72000000000000000000000000000000000000000000000000000000);
+            revert(0x80,0x64);
+        }
+    }
+
+    mapping(address => uint256) public MAPPING_EEF8EDA1
+
+    function FUNC_F3A4CA86( uint256 arg0,uint256 arg1,uint256 arg2) public return (var0,var1,var2)
+    {
+        var2 = arg0;
+        var3 = arg1;
+        var4 = arg2;
+        if ((uint160(msg.sender) == uint160(uint160(tokenAddr)))) 
+        {
+            var9 = (mapping_0x20[uint160(uint160(arg0))].member_0x0 > 0x0);
+            if ((mapping_0x20[uint160(uint160(arg0))].member_0x0 > 0x0)) 
+            {
+                if (var9) 
+                {
+label_00004DCC:
+
+                    //ISSUE:WARNING:Block timestamp is referred.
+                    var9 = block.timestamp;
+                    var10 = (mapping_0x20[uint160(uint160(arg0))].member_0x0 == 0x0);
+                    if ((mapping_0x20[uint160(uint160(arg0))].member_0x0 == 0x0)) 
+                    {
+                        if ((0x0 > var3)) 
+                        {
+                            goto label_000050C8;
+                        }
+                        else
+                        {
+                            goto label_00004E06;
+                        }
+                    }
+                    else if (var10) 
+                    {
+label_00004E06:
+                        mstore(0xA0,var9);
+                        mstore(0xC0,(0x1000000000000000000000000 * uint160(uint160(msg.sender))));
+                        mstore(0xD4,var3);
+                        mstore(0x80,0x54);
+                        mstore(0x40,0xF4);
+                        temp403 = mload(0x80);
+                        temp404 = keccak256(0xA0,temp403);
+                        var12 = temp404;
+                        assert(0x5);
+                        temp405 = (VAR_F514CE36 + (MOD(var12,0x5) + 0x1));
+                        VAR_F514CE36 = temp405;
+                        mapping_0x20[uint160(uint160(arg0))].member_0x0 = VAR_F514CE36;
+                        mapping_0x20[uint160(uint160(arg0))].member_0x1 = uint160(var2);
+                        mapping_0x2E[VAR_F514CE36] = uint160(var2);
+                        mapping_0x20[uint160(uint160(arg0))].member_0x13 = var9;
+                        if ((0x64 > var3)) 
+                        {
+                            var10 = (MAPPING_8CD4DDA2[mapping_0x20[uint160(uint160(arg0))].member_0x0] == 0x5);
+                            if ((MAPPING_8CD4DDA2[mapping_0x20[uint160(uint160(arg0))].member_0x0] == 0x5)) 
+                            {
+                                goto label_00005105;
+                            }
+                            else
+                            {
+                                goto label_000050E9;
+                            }
+                        }
+                        else
+                        {
+                            var10 = (var3 > mapping_0x20[uint160(uint160(arg0))].member_0x0);
+                            if ((var3 > mapping_0x20[uint160(uint160(arg0))].member_0x0)) 
+                            {
+                                if (var10) 
+                                {
+label_00004FAE:
+                                    var7 = 0x0;
+                                    var6 = 0x0;
+                                    var5 = 0x0;
+                                    goto label_000051B3;
+                                }
+                                else
+                                {
+label_00004FC5:
+                                    mapping_0x20[uint160(uint160(arg0))].member_0x11 = var3;
+                                    mapping_0x20[uint160(uint160(arg0))].member_0x12 = uint160(uint160(mapping_0x2E[var3]));
+                                    mapping_0x27[mapping_0x20[uint160(uint160(arg0))].member_0x11] = (mapping_0x27[mapping_0x20[uint160(uint160(arg0))].member_0x11] + 0x1);
+                                    mstore(0x0,temp409);
+                                    temp410 = keccak256(0x0,0x20);
+                                    sstore((temp410 + mapping_0x27[mapping_0x20[uint160(uint160(arg0))].member_0x11]),mapping_0x20[uint160(uint160(arg0))].member_0x0);
+                                    mapping_0x26[mapping_0x20[uint160(uint160(arg0))].member_0x11].member_0x0 = (0x1 + mapping_0x26[mapping_0x20[uint160(uint160(arg0))].member_0x11].member_0x0);
+                                    var9 = func_0000567E(mapping_0x20[uint160(uint160(arg0))].member_0x11,0x0,0x1,0x0);
+label_000050C8:
+                                    var10 = (MAPPING_8CD4DDA2[mapping_0x20[uint160(uint160(arg0))].member_0x0] == 0x5);
+                                    if ((MAPPING_8CD4DDA2[mapping_0x20[uint160(uint160(arg0))].member_0x0] == 0x5)) 
+                                    {
+                                        goto label_00005105;
+                                    }
+                                    else
+                                    {
+                                        goto label_000050E9;
+                                    }
+                                }
+                            }
+                            else if ((uint160(uint160(mapping_0x2E[var3])) == 0x0)) 
+                            {
+                                goto label_00004FAE;
+                            }
+                            else
+                            {
+                                goto label_00004FC5;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        var10 = (MAPPING_8CD4DDA2[mapping_0x20[uint160(uint160(arg0))].member_0x0] == 0x5);
+                        if ((MAPPING_8CD4DDA2[mapping_0x20[uint160(uint160(arg0))].member_0x0] == 0x5)) 
+                        {
+                            if (var10) 
+                            {
+label_0000510C:
+                                var10 = var4;
+label_0000510E:
+                                if (var10) 
+                                {
+                                    goto label_00005114;
+                                }
+                                else
+                                {
+                                    goto label_0000519E;
+                                }
+                            }
+                            else if (var10) 
+                            {
+label_00005114:
+                                mapping_0x20[uint160(uint160(arg0))].member_0x10 = 0x1;
+                                if ((MAPPING_63753E6D[mapping_0x20[uint160(uint160(arg0))].member_0x0] == 0x0)) 
+                                {
+                                    MAPPING_63753E6D[mapping_0x20[uint160(uint160(arg0))].member_0x0] = 0x1;
+                                    sstore(0x2A,(sload(0x2A) + 0x1));
+                                    mstore(0x0,0x2A);
+                                    temp401 = keccak256(0x0,0x20);
+                                    sstore((temp401 + sload(0x2A)),mapping_0x20[uint160(uint160(arg0))].member_0x0);
+                                    VAR_97F929F7 = (0x1 + VAR_97F929F7);
+label_0000519E:
+                                    var7 = mapping_0x20[uint160(uint160(arg0))].member_0x11;
+                                    var6 = mapping_0x20[uint160(uint160(arg0))].member_0x0;
+                                    var5 = 0x1;
+label_000051B3:
+                                    return(var5,var6,var7);
+                                }
+                                else
+                                {
+                                    return(0x1,mapping_0x20[uint160(uint160(arg0))].member_0x0,mapping_0x20[uint160(uint160(arg0))].member_0x11);
+                                }
+                            }
+                            else
+                            {
+                                return(0x1,mapping_0x20[uint160(uint160(arg0))].member_0x0,mapping_0x20[uint160(uint160(arg0))].member_0x11);
+                            }
+                        }
+                        else
+                        {
+label_000050E9:
+                            var10 = (MAPPING_F92E04C0[mapping_0x20[uint160(uint160(arg0))].member_0x0] == 0x5);
+label_00005105:
+                            if (var10) 
+                            {
+                                goto label_0000510C;
+                            }
+                            else
+                            {
+                                goto label_0000510E;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+label_00004DD0:
+                    return(0x0,0x0,0x0);
+                }
+            }
+            else if ((mapping_0x20[uint160(uint160(arg0))].member_0x0 == 0x0)) 
+            {
+                var9 = (arg1 > 0x0);
+                if ((arg1 > 0x0)) 
+                {
+                    if (var9) 
+                    {
+                        goto label_00004DCC;
+                    }
+                    else
+                    {
+                        goto label_00004DD0;
+                    }
+                }
+                else if ((arg1 == 0x64)) 
+                {
+                    goto label_00004DCC;
+                }
+                else
+                {
+                    goto label_00004DD0;
+                }
+            }
+            else if (var9) 
+            {
+                goto label_00004DCC;
+            }
+            else
+            {
+                goto label_00004DD0;
+            }
+        }
+        else
+        {
+            var7 = 0x0;
+            var6 = 0x0;
+            var5 = 0x0;
+            goto label_000051B3;
+        }
+    }
+
+    uint256 public VAR_F514CE36;
+
+    function FUNC_F7630CE3( uint256 arg0) public return (var0,var1)
+    {
+        var5 = func_00005DF1();
+        mstore(0x40,0x300);
+        mstore(0x80,mapping_0x20[uint160(uint160(arg0))].member_0x0);
+        mstore(0xA0,uint160(uint160(uint160(mapping_0x20[uint160(uint160(arg0))].member_0x1))));
+        mstore(0xC0,mapping_0x20[uint160(uint160(arg0))].member_0x2);
+        mstore(0xE0,mapping_0x20[uint160(uint160(arg0))].member_0x3);
+        mstore(0x100,mapping_0x20[uint160(uint160(arg0))].member_0x4);
+        mstore(0x120,mapping_0x20[uint160(uint160(arg0))].member_0x5);
+        mstore(0x140,mapping_0x20[uint160(uint160(arg0))].member_0x6);
+        mstore(0x160,mapping_0x20[uint160(uint160(arg0))].member_0x7);
+        mstore(0x180,mapping_0x20[uint160(uint160(arg0))].member_0x8);
+        mstore(0x1A0,mapping_0x20[uint160(uint160(arg0))].member_0x9);
+        mstore(0x1C0,mapping_0x20[uint160(uint160(arg0))].member_0xA);
+        mstore(0x1E0,mapping_0x20[uint160(uint160(arg0))].member_0xB);
+        mstore(0x200,mapping_0x20[uint160(uint160(arg0))].member_0xC);
+        mstore(0x220,mapping_0x20[uint160(uint160(arg0))].member_0xD);
+        mstore(0x240,mapping_0x20[uint160(uint160(arg0))].member_0xE);
+        mstore(0x260,mapping_0x20[uint160(uint160(arg0))].member_0xF);
+        mstore(0x280,mapping_0x20[uint160(uint160(arg0))].member_0x10);
+        mstore(0x2A0,mapping_0x20[uint160(uint160(arg0))].member_0x11);
+        mstore(0x2C0,uint160(uint160(uint160(mapping_0x20[uint160(uint160(arg0))].member_0x12))));
+        mstore(0x2E0,mapping_0x20[uint160(uint160(arg0))].member_0x13);
+        temp417 = mload(0x80);
+        temp416 = mload(0x2A0);
+        return(temp417,temp416);
+    }
+
+    mapping(address => uint256) public MAPPING_F92E04C0
+
+    mapping(address => uint256) public MAPPING_FC5F6081
+
+    function func_00001828() private return (var0)
+    {
+        if ((extcodesize(msg.sender) == 0x0)) 
+        {
+
+            //ISSUE:WARNING:tx.origin shouldn't be used to for privilege control
+            if ((uint160(tx.origin) == uint160(msg.sender))) 
+            {
+                var4 = (mapping_0x20[uint160(uint160(msg.sender))].member_0x0 > 0x0);
+                if ((0x0 > mapping_0x20[uint160(uint160(msg.sender))].member_0x0)) 
+                {
+                    if (var4) 
+                    {
+label_00001A1D:
+
+                        //ISSUE:WARNING:Block timestamp is referred.
+                        var4 = block.timestamp;
+                        var8 = func_00002CEC(msg.sender);
+                        var6 = var8;
+
+                        //ISSUE:WARNING:Block timestamp is referred.
+                        mapping_0x20[uint160(uint160(msg.sender))].member_0x5 = block.timestamp;
+                        temp16 = ((((var8 + MAPPING_A76E76A0[mapping_0x20[uint160(uint160(msg.sender))].member_0x0]) + MAPPING_9BE6D491[mapping_0x20[uint160(uint160(msg.sender))].member_0x0]) + mapping_0x20[uint160(uint160(msg.sender))].member_0x8) + MAPPING_EEF8EDA1[mapping_0x20[uint160(uint160(msg.sender))].member_0x0]);
+                        var7 = temp16;
+                        if ((mapping_0x20[uint160(uint160(msg.sender))].member_0x2 > temp16)) 
+                        {
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0xC = (mapping_0x20[uint160(uint160(msg.sender))].member_0xC + var6);
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0xE = (mapping_0x20[uint160(uint160(msg.sender))].member_0xE + MAPPING_A76E76A0[mapping_0x20[uint160(uint160(msg.sender))].member_0x0]);
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0xF = (mapping_0x20[uint160(uint160(msg.sender))].member_0xF + MAPPING_9BE6D491[mapping_0x20[uint160(uint160(msg.sender))].member_0x0]);
+                            var8 = MAPPING_CBE3B04B[mapping_0x20[uint160(uint160(msg.sender))].member_0x0];
+                            MAPPING_CBE3B04B[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] = 0x0;
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0xA = (mapping_0x20[uint160(uint160(msg.sender))].member_0xA + MAPPING_CBE3B04B[mapping_0x20[uint160(uint160(msg.sender))].member_0x0]);
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0x9 = (mapping_0x20[uint160(uint160(msg.sender))].member_0x9 + mapping_0x20[uint160(uint160(msg.sender))].member_0x9);
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0x8 = 0x0;
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0xD = (mapping_0x20[uint160(uint160(msg.sender))].member_0xD + MAPPING_EEF8EDA1[mapping_0x20[uint160(uint160(msg.sender))].member_0x0]);
+                            MAPPING_EEF8EDA1[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] = 0x0;
+                            MAPPING_A76E76A0[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] = 0x0;
+                            MAPPING_9BE6D491[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] = 0x0;
+                            var9 = func_000055F3(mapping_0x20[uint160(uint160(msg.sender))].member_0x2,var7);
+label_00001C0F:
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0x2 = var9;
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0x6 = (mapping_0x20[uint160(uint160(msg.sender))].member_0x6 + var7);
+                            MAPPING_BB2F9366[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] = (MAPPING_BB2F9366[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] + var7);
+                            MAPPING_7DD657AF[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] = (MAPPING_7DD657AF[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] + var8);
+                            if ((mapping_0x20[uint160(uint160(msg.sender))].member_0x2 == 0x0)) 
+                            {
+                                if ((0x0 > mapping_0x20[uint160(uint160(msg.sender))].member_0x11)) 
+                                {
+                                    mapping_0x21[mapping_0x20[uint160(uint160(msg.sender))].member_0x0].member_0x1 = (mapping_0x21[mapping_0x20[uint160(uint160(msg.sender))].member_0x0].member_0x1 - mapping_0x20[uint160(uint160(msg.sender))].member_0x3);
+                                    mapping_0x21[mapping_0x20[uint160(uint160(msg.sender))].member_0x0].member_0x3 = 0x0;
+                                    mapping_0x20[uint160(uint160(msg.sender))].member_0x4 = 0x0;
+                                    var9 = FUNC_82883100(0x0);
+                                    goto label_00001D55;
+                                }
+                                else if ((0x0 > mapping_0x26[mapping_0x20[uint160(uint160(msg.sender))].member_0x11].member_0x1)) 
+                                {
+                                    var8 = func_0000567E(mapping_0x20[uint160(uint160(msg.sender))].member_0x11,mapping_0x20[uint160(uint160(msg.sender))].member_0x3,0x0,0x1);
+label_00001CF3:
+                                    mapping_0x21[mapping_0x20[uint160(uint160(msg.sender))].member_0x0].member_0x1 = (mapping_0x21[mapping_0x20[uint160(uint160(msg.sender))].member_0x0].member_0x1 - mapping_0x20[uint160(uint160(msg.sender))].member_0x3);
+                                    mapping_0x21[mapping_0x20[uint160(uint160(msg.sender))].member_0x0].member_0x3 = 0x0;
+                                    mapping_0x20[uint160(uint160(msg.sender))].member_0x4 = 0x0;
+                                    var9 = FUNC_82883100(0x0);
+                                    goto label_00001D55;
+                                }
+                                else
+                                {
+                                    mapping_0x26[mapping_0x20[uint160(uint160(msg.sender))].member_0x11].member_0x1 = (mapping_0x26[mapping_0x20[uint160(uint160(msg.sender))].member_0x11].member_0x1 - mapping_0x20[uint160(uint160(msg.sender))].member_0x3);
+                                    var8 = func_0000567E(mapping_0x20[uint160(uint160(msg.sender))].member_0x11,mapping_0x20[uint160(uint160(msg.sender))].member_0x3,0x0,0x1);
+                                    goto label_00001CF3;
+                                }
+                            }
+                            else
+                            {
+                                var9 = FUNC_82883100(0x0);
+label_00001D55:
+                                var10 = sload(0x14);
+                                var11 = (var4 - startTime);
+                                assert(sload(0x14));
+                                temp33 = (var11 / var10);
+                                var9 = func_000054B6(temp33);
+                                return(var-1);
+                            }
+                        }
+                        else
+                        {
+                            var7 = mapping_0x20[uint160(uint160(msg.sender))].member_0x2;
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0xC = (mapping_0x20[uint160(uint160(msg.sender))].member_0xC + var6);
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0xE = (mapping_0x20[uint160(uint160(msg.sender))].member_0xE + MAPPING_A76E76A0[mapping_0x20[uint160(uint160(msg.sender))].member_0x0]);
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0xF = (mapping_0x20[uint160(uint160(msg.sender))].member_0xF + MAPPING_9BE6D491[mapping_0x20[uint160(uint160(msg.sender))].member_0x0]);
+                            var8 = MAPPING_CBE3B04B[mapping_0x20[uint160(uint160(msg.sender))].member_0x0];
+                            MAPPING_CBE3B04B[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] = 0x0;
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0xA = (mapping_0x20[uint160(uint160(msg.sender))].member_0xA + MAPPING_CBE3B04B[mapping_0x20[uint160(uint160(msg.sender))].member_0x0]);
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0x9 = (mapping_0x20[uint160(uint160(msg.sender))].member_0x9 + mapping_0x20[uint160(uint160(msg.sender))].member_0x9);
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0x8 = 0x0;
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0xD = (mapping_0x20[uint160(uint160(msg.sender))].member_0xD + MAPPING_EEF8EDA1[mapping_0x20[uint160(uint160(msg.sender))].member_0x0]);
+                            MAPPING_EEF8EDA1[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] = 0x0;
+                            MAPPING_A76E76A0[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] = 0x0;
+                            MAPPING_9BE6D491[mapping_0x20[uint160(uint160(msg.sender))].member_0x0] = 0x0;
+                            var9 = func_000055F3(mapping_0x20[uint160(uint160(msg.sender))].member_0x2,mapping_0x20[uint160(uint160(msg.sender))].member_0x2);
+                            goto label_00001C0F;
+                        }
+                    }
+                    else
+                    {
+label_000019B0:
+                        mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                        mstore(0x84,0x20);
+                        mstore(0xA4,0x3);
+                        mstore(0xC4,0x6572720000000000000000000000000000000000000000000000000000000000);
+                        revert(0x80,0x64);
+                    }
+                }
+                else if ((mapping_0x20[uint160(uint160(msg.sender))].member_0x2 > 0x0)) 
+                {
+                    goto label_00001A1D;
+                }
+                else
+                {
+                    goto label_000019B0;
+                }
+            }
+            else
+            {
+                mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                mstore(0x84,0x20);
+                mstore(0xA4,0x11);
+                mstore(0xC4,0x736F7272792C2068756D616E206F6E6C79000000000000000000000000000000);
+                revert(0x80,0x64);
+            }
+        }
+        else
+        {
+            mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+            mstore(0x84,0x20);
+            mstore(0xA4,0x11);
+            mstore(0xC4,0x736F7272792068756D616E73206F6E6C79000000000000000000000000000000);
+            revert(0x80,0x64);
+        }
+    }
+
+    function func_00002CEC( uint256 arg0) private return (var0)
+    {
+        var11 = func_00005DF1();
+        mstore(0x40,0x580);
+        mstore(0x300,mapping_0x20[uint160(uint160(arg0))].member_0x0);
+        mstore(0x320,uint160(uint160(uint160(mapping_0x20[uint160(uint160(arg0))].member_0x1))));
+        mstore(0x340,mapping_0x20[uint160(uint160(arg0))].member_0x2);
+        mstore(0x360,mapping_0x20[uint160(uint160(arg0))].member_0x3);
+        mstore(0x380,mapping_0x20[uint160(uint160(arg0))].member_0x4);
+        mstore(0x3A0,mapping_0x20[uint160(uint160(arg0))].member_0x5);
+        mstore(0x3C0,mapping_0x20[uint160(uint160(arg0))].member_0x6);
+        mstore(0x3E0,mapping_0x20[uint160(uint160(arg0))].member_0x7);
+        mstore(0x400,mapping_0x20[uint160(uint160(arg0))].member_0x8);
+        mstore(0x420,mapping_0x20[uint160(uint160(arg0))].member_0x9);
+        mstore(0x440,mapping_0x20[uint160(uint160(arg0))].member_0xA);
+        mstore(0x460,mapping_0x20[uint160(uint160(arg0))].member_0xB);
+        mstore(0x480,mapping_0x20[uint160(uint160(arg0))].member_0xC);
+        mstore(0x4A0,mapping_0x20[uint160(uint160(arg0))].member_0xD);
+        mstore(0x4C0,mapping_0x20[uint160(uint160(arg0))].member_0xE);
+        mstore(0x4E0,mapping_0x20[uint160(uint160(arg0))].member_0xF);
+        mstore(0x500,mapping_0x20[uint160(uint160(arg0))].member_0x10);
+        mstore(0x520,mapping_0x20[uint160(uint160(arg0))].member_0x11);
+        mstore(0x540,uint160(uint160(uint160(mapping_0x20[uint160(uint160(arg0))].member_0x12))));
+        mstore(0x560,mapping_0x20[uint160(uint160(arg0))].member_0x13);
+        var11 = 0x300;
+        temp2 = mload(0x360);
+        var12 = (temp2 == 0x0);
+        if ((temp2 == 0x0)) 
+        {
+            if (var12) 
+            {
+label_00002EC2:
+                var10 = 0x0;
+                var9 = 0x0;
+                goto label_00002F62;
+            }
+            else
+            {
+label_00002ED4:
+
+                //ISSUE:WARNING:Block timestamp is referred.
+                var12 = block.timestamp;
+                var14 = sload(0x14);
+                var15 = sload(0x14);
+                temp4 = mload((0x80 + var11));
+                temp3 = mload((0xA0 + var11));
+                var16 = (temp3 - temp4);
+                assert(sload(0x14));
+                temp5 = (var16 / var15);
+                temp6 = mload((0x80 + var11));
+                temp7 = (temp6 + (temp5 * var14));
+                var15 = sload(0x14);
+                var16 = (var12 - temp7);
+                assert(sload(0x14));
+                temp8 = (var16 / var15);
+                temp9 = mload((0x60 + var11));
+                var16 = func_00005A49(temp9);
+                temp10 = mload((0x60 + var11));
+                var19 = func_00005B84(temp10,var16);
+                var17 = func_00005C2B(var19,0x2710);
+                temp11 = (temp8 * var17);
+                var10 = temp11;
+                var9 = temp8;
+label_00002F62:
+                return(var10);
+            }
+        }
+        else
+        {
+            temp12 = mload(0x340);
+            if ((temp12 == 0x0)) 
+            {
+                goto label_00002EC2;
+            }
+            else
+            {
+                goto label_00002ED4;
+            }
+        }
+    }
+
+    function func_00005DF1() private return (var0)
+    {
+        mstore(0x40,0x300);
+        mstore(0x80,0x0);
+        mstore(0xA0,uint160(0x0));
+        mstore(0xC0,0x0);
+        mstore(0xE0,0x0);
+        mstore(0x100,0x0);
+        mstore(0x120,0x0);
+        mstore(0x140,0x0);
+        mstore(0x160,0x0);
+        mstore(0x180,0x0);
+        mstore(0x1A0,0x0);
+        mstore(0x1C0,0x0);
+        mstore(0x1E0,0x0);
+        mstore(0x200,0x0);
+        mstore(0x220,0x0);
+        mstore(0x240,0x0);
+        mstore(0x260,0x0);
+        mstore(0x280,0x0);
+        mstore(0x2A0,0x0);
+        mstore(0x2C0,uint160(0x0));
+        mstore(0x2E0,0x0);
+        return(0x80);
+    }
+
+    function func_00005A49( uint256 arg0) private return (var0)
+    {
+        if ((arg0 == (0x2 * sload(0x0)))) 
+        {
+            assert((0x0 < 0x8));
+            var18 = sload(0x7);
+            goto label_00005B7F;
+        }
+        else if ((arg0 == (0x6 * sload(0x0)))) 
+        {
+            assert((0x1 < 0x8));
+            var18 = sload(0x8);
+            goto label_00005B7F;
+        }
+        else if ((arg0 == (0xA * sload(0x0)))) 
+        {
+            assert((0x2 < 0x8));
+            var18 = sload(0x9);
+            goto label_00005B7F;
+        }
+        else if ((arg0 == (0x14 * sload(0x0)))) 
+        {
+            assert((0x3 < 0x8));
+            var18 = sload(0xA);
+            goto label_00005B7F;
+        }
+        else if ((arg0 == (0x1E * sload(0x0)))) 
+        {
+            assert((0x4 < 0x8));
+            var18 = sload(0xB);
+            goto label_00005B7F;
+        }
+        else if ((arg0 == (0x28 * sload(0x0)))) 
+        {
+            assert((0x5 < 0x8));
+            var18 = sload(0xC);
+            goto label_00005B7F;
+        }
+        else if ((arg0 == (0x32 * sload(0x0)))) 
+        {
+            assert((0x6 < 0x8));
+            var18 = sload(0xD);
+            goto label_00005B7F;
+        }
+        else if ((arg0 < (0x64 * sload(0x0)))) 
+        {
+            var18 = 0x0;
+label_00005B7F:
+            return(var18);
+        }
+        else
+        {
+            assert((0x7 < 0x8));
+            var18 = sload(0xE);
+            goto label_00005B7F;
+        }
+    }
+
+    function func_00005B84( uint256 arg0,uint256 arg1) private return (var0)
+    {
+        if ((arg0 == 0x0)) 
+        {
+            var22 = 0x0;
+            goto label_00005C25;
+        }
+        else
+        {
+            var23 = (arg0 * arg1);
+            var26 = (arg0 * arg1);
+            assert(arg0);
+            if (((var26 / arg0) == arg1)) 
+            {
+                var22 = var23;
+label_00005C25:
+                return(var22);
+            }
+            else
+            {
+                mstore(0x580,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                mstore(0x584,0x20);
+                mstore(0x5A4,0xC);
+                mstore(0x5C4,0x6D756C206F766572666C6F770000000000000000000000000000000000000000);
+                revert(0x580,0x64);
+            }
+        }
+    }
+
+    function func_00005C2B( uint256 arg0,uint256 arg1) private return (var0)
+    {
+        if ((arg1 > 0x0)) 
+        {
+            assert(arg1);
+            return((arg0 / arg1));
+        }
+        else
+        {
+            mstore(0x580,0x8C379A000000000000000000000000000000000000000000000000000000000);
+            mstore(0x584,0x20);
+            mstore(0x5A4,0x8);
+            mstore(0x5C4,0x646976207A65726F000000000000000000000000000000000000000000000000);
+            revert(0x580,0x64);
+        }
+    }
+
+    function func_000055F3( uint256 arg0,uint256 arg1) private return (var0)
+    {
+        if ((arg0 > arg1)) 
+        {
+            return((arg0 - arg1));
+        }
+        else
+        {
+            mstore(0x580,0x8C379A000000000000000000000000000000000000000000000000000000000);
+            mstore(0x584,0x20);
+            mstore(0x5A4,0x10);
+            mstore(0x5C4,0x6C6F776572207375622062696767657200000000000000000000000000000000);
+            revert(0x580,0x64);
+        }
+    }
+
+    function func_000054B6( uint256 arg0) private return (var0)
+    {
+        var12 = (arg0 > 0x0);
+        if ((0x0 > arg0)) 
+        {
+            if (var12) 
+            {
+label_000054E3:
+                var12 = (MAPPING_5FA040EE[var11] == 0x0);
+label_000054FB:
+                if (var12) 
+                {
+                    goto label_00005502;
+                }
+                else
+                {
+                    goto label_00005509;
+                }
+            }
+            else if (var12) 
+            {
+label_00005502:
+                var12 = (VAR_97F929F7 > 0x0);
+label_00005509:
+                if (var12) 
+                {
+                    goto label_0000550F;
+                }
+                else
+                {
+                    goto label_000055F0;
+                }
+            }
+            else if (var12) 
+            {
+label_0000550F:
+                var13 = VAR_97F929F7;
+                var15 = (MAPPING_9FF95193[(var11 - 0x1)] * 0x3);
+                assert(0x64);
+                var14 = (var15 / 0x64);
+                assert(var13);
+                temp35 = (var14 / var13);
+                var12 = temp35;
+                var13 = 0x0;
+label_0000554B:
+                if ((sload(0x2A) < var13)) 
+                {
+                    MAPPING_5FA040EE[var11] = var12;
+label_000055F0:
+                    return(var9);
+                }
+                else
+                {
+                    var18 = var13;
+                    assert((var13 < sload(0x2A)));
+                    mstore(0x0,0x2A);
+                    temp37 = keccak256(0x0,0x20);
+                    if ((MAPPING_63753E6D[sload((temp37 + var18))] == 0x1)) 
+                    {
+                        var14 = var12;
+                        var18 = var13;
+                        assert((var13 < sload(0x2A)));
+                        mstore(0x0,0x2A);
+                        temp39 = keccak256(0x0,0x20);
+                        temp41 = (MAPPING_EEF8EDA1[sload((temp39 + var18))] + var14);
+                        MAPPING_EEF8EDA1[sload((temp39 + var18))] = temp41;
+                        var13 = (0x1 + var13);
+                        goto label_0000554B;
+                    }
+                    else
+                    {
+                        var13 = (0x1 + var13);
+                        goto label_0000554B;
+                    }
+                }
+            }
+            else
+            {
+                return(var9);
+            }
+        }
+        else
+        {
+            var12 = (MAPPING_9FF95193[(arg0 - 0x1)] > 0x0);
+            if ((0x0 > MAPPING_9FF95193[(arg0 - 0x1)])) 
+            {
+                goto label_000054FB;
+            }
+            else
+            {
+                goto label_000054E3;
+            }
+        }
+    }
+
+    function func_0000567E( uint256 arg0,uint256 arg1,uint256 arg2,uint256 arg3) private return (var0)
+    {
+        var11 = arg1;
+        var12 = arg2;
+        var13 = arg3;
+        var14 = arg0;
+        var15 = arg1;
+        var16 = 0x1;
+label_0000568F:
+        if ((var16 > 0x19)) 
+        {
+label_00005A40:
+            return(var8);
+        }
+        else if ((var14 == 0x0)) 
+        {
+            goto label_00005A40;
+        }
+        else
+        {
+            var17 = uint160(mapping_0x2E[var14]);
+            if ((uint160(uint160(mapping_0x2E[var14])) == uint160(0x0))) 
+            {
+                goto label_00005A40;
+            }
+            else
+            {
+                mstore(0x0,var14);
+                mstore(0x20,0x21);
+                temp48 = keccak256(0x0,0x40);
+                var18 = temp48;
+                if (var13) 
+                {
+                    var19 = func_000055F3(mapping_0x21[var14].member_0x1,var11);
+                    mapping_0x21[var14].member_0x1 = var19;
+                    var19 = 0x0;
+                    var20 = 0x0;
+label_00005761:
+                    if ((mapping_0x27[var14] < var20)) 
+                    {
+                        mapping_0x21[var14].member_0x2 = var19;
+                        goto label_00005869;
+                    }
+                    else
+                    {
+                        var21 = func_00005EB7();
+                        var25 = var20;
+                        assert((var20 < mapping_0x27[var14]));
+                        mstore(0x0,var24);
+                        temp70 = keccak256(0x0,0x20);
+                        mstore(0x40,0x680);
+                        mstore(0x600,mapping_0x21[sload((temp70 + var25))].member_0x0);
+                        mstore(0x620,mapping_0x21[sload((temp70 + var25))].member_0x1);
+                        mstore(0x640,mapping_0x21[sload((temp70 + var25))].member_0x2);
+                        mstore(0x660,mapping_0x21[sload((temp70 + var25))].member_0x3);
+                        temp72 = mload(0x620);
+                        if ((var19 > temp72)) 
+                        {
+                            var20 = (0x1 + var20);
+                            goto label_00005761;
+                        }
+                        else
+                        {
+                            temp73 = mload(0x620);
+                            var19 = temp73;
+                            var20 = (0x1 + var20);
+                            goto label_00005761;
+                        }
+                    }
+                }
+                else
+                {
+                    var19 = func_000053C0(mapping_0x21[var14].member_0x1,var11);
+                    mapping_0x21[var14].member_0x1 = var19;
+                    if ((mapping_0x21[var14].member_0x2 > var15)) 
+                    {
+                        var15 = mapping_0x21[var14].member_0x1;
+                        mapping_0x21[var14].member_0x0 = (mapping_0x21[var14].member_0x0 + var12);
+                        var19 = ((mapping_0x21[var14].member_0x1 - mapping_0x21[var14].member_0x1) - mapping_0x21[var14].member_0x3);
+                        var21 = func_00005CBE(((mapping_0x21[var14].member_0x1 - mapping_0x21[var14].member_0x1) - mapping_0x21[var14].member_0x3),mapping_0x26[var14].member_0x0);
+label_000058B2:
+                        var20 = var21;
+                        if ((MAPPING_CDB0963E[var14] == var21)) 
+                        {
+                            var14 = mapping_0x20[uint160(uint160(var17))].member_0x11;
+                            var16 = (0x1 + var16);
+                            goto label_0000568F;
+                        }
+                        else
+                        {
+                            MAPPING_CDB0963E[var14] = var20;
+                            if ((MAPPING_8CD4DDA2[var14] == 0x0)) 
+                            {
+                                var21 = (var20 == 0x5);
+                                if ((var20 == 0x5)) 
+                                {
+                                    goto label_00005912;
+                                }
+                                else
+                                {
+                                    goto label_0000592B;
+                                }
+                            }
+                            else if (var21) 
+                            {
+label_00005912:
+                                var21 = ((MAPPING_F92E04C0[var14] == 0x5) == 0);
+label_0000592B:
+                                if (var21) 
+                                {
+                                    goto label_00005931;
+                                }
+                                else
+                                {
+                                    goto label_00005960;
+                                }
+                            }
+                            else if (var21) 
+                            {
+label_00005931:
+                                VAR_922D0F7C = (0x1 + VAR_922D0F7C);
+                                MAPPING_8CD4DDA2[var14] = 0x5;
+                                goto label_000059E9;
+                            }
+                            else
+                            {
+label_00005960:
+                                if ((MAPPING_8CD4DDA2[var14] == 0x5)) 
+                                {
+                                    var21 = ((MAPPING_F92E04C0[var14] == 0x5) == 0);
+                                    if ((MAPPING_F92E04C0[var14] == 0x5)) 
+                                    {
+                                        goto label_000059B6;
+                                    }
+                                    else
+                                    {
+                                        goto label_0000599E;
+                                    }
+                                }
+                                else if (var21) 
+                                {
+label_0000599E:
+                                    var21 = (MAPPING_F92E04C0[var14] < 0x5);
+label_000059B6:
+                                    if (var21) 
+                                    {
+                                        goto label_000059BC;
+                                    }
+                                    else
+                                    {
+                                        goto label_000059E8;
+                                    }
+                                }
+                                else if (var21) 
+                                {
+label_000059BC:
+                                    VAR_922D0F7C = (VAR_922D0F7C - 0x1);
+                                    MAPPING_8CD4DDA2[var14] = 0x0;
+label_000059E8:
+label_000059E9:
+                                    var14 = mapping_0x20[uint160(uint160(var17))].member_0x11;
+                                    var16 = (0x1 + var16);
+                                    goto label_0000568F;
+                                }
+                                else
+                                {
+                                    var14 = mapping_0x20[uint160(uint160(var17))].member_0x11;
+                                    var16 = (0x1 + var16);
+                                    goto label_0000568F;
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        mapping_0x21[var14].member_0x2 = var15;
+                        var15 = mapping_0x21[var14].member_0x1;
+label_00005869:
+                        mapping_0x21[var14].member_0x0 = (mapping_0x21[var14].member_0x0 + var12);
+                        var19 = ((mapping_0x21[var14].member_0x1 - mapping_0x21[var14].member_0x1) - mapping_0x21[var14].member_0x3);
+                        var20 = 0x0;
+                        var21 = func_00005CBE(((mapping_0x21[var14].member_0x1 - mapping_0x21[var14].member_0x1) - mapping_0x21[var14].member_0x3),mapping_0x26[var14].member_0x0);
+                        goto label_000058B2;
+                    }
+                }
+            }
+        }
+    }
+
+    function func_000053C0( uint256 arg0,uint256 arg1) private return (var0)
+    {
+        var23 = (arg0 + arg1);
+        if ((arg0 < (arg0 + arg1))) 
+        {
+            return(var23);
+        }
+        else
+        {
+            mstore(0x580,0x8C379A000000000000000000000000000000000000000000000000000000000);
+            mstore(0x584,0x20);
+            mstore(0x5A4,0x8);
+            mstore(0x5C4,0x6F766572666C6F77000000000000000000000000000000000000000000000000);
+            revert(0x580,0x64);
+        }
+    }
+
+    function func_00005CBE( uint256 arg0,uint256 arg1) private return (var0)
+    {
+        var22 = arg0;
+        var23 = arg1;
+        var24 = 0x0;
+        var25 = sload(0x0);
+        assert((0x5 < 0x6));
+        var25 = ((sload(0x6) * var25) < arg0);
+        if (var25) 
+        {
+            if ((arg1 < 0xF)) 
+            {
+                goto label_00005CF3;
+            }
+            else
+            {
+                goto label_00005CEB;
+            }
+        }
+        else if (var25) 
+        {
+label_00005CEB:
+            var24 = 0x5;
+            goto label_00005DC7;
+        }
+        else
+        {
+label_00005CF3:
+            var25 = sload(0x0);
+            assert((0x4 < 0x6));
+            var25 = ((sload(0x5) * var25) < var22);
+            if (var25) 
+            {
+                if ((var23 < 0xF)) 
+                {
+                    goto label_00005D27;
+                }
+                else
+                {
+                    goto label_00005D1F;
+                }
+            }
+            else if (var25) 
+            {
+label_00005D1F:
+                var24 = 0x4;
+                goto label_00005DC7;
+            }
+            else
+            {
+label_00005D27:
+                var25 = sload(0x0);
+                assert((0x3 < 0x6));
+                var25 = ((sload(0x4) * var25) < var22);
+                if (var25) 
+                {
+                    if ((var23 < 0xF)) 
+                    {
+                        goto label_00005D5B;
+                    }
+                    else
+                    {
+                        goto label_00005D53;
+                    }
+                }
+                else if (var25) 
+                {
+label_00005D53:
+                    var24 = 0x3;
+                    goto label_00005DC7;
+                }
+                else
+                {
+label_00005D5B:
+                    var25 = sload(0x0);
+                    assert((0x2 < 0x6));
+                    var25 = ((sload(0x3) * var25) < var22);
+                    if (var25) 
+                    {
+                        if ((var23 < 0xA)) 
+                        {
+                            goto label_00005D8F;
+                        }
+                        else
+                        {
+                            goto label_00005D87;
+                        }
+                    }
+                    else if (var25) 
+                    {
+label_00005D87:
+                        var24 = 0x2;
+                        goto label_00005DC7;
+                    }
+                    else
+                    {
+label_00005D8F:
+                        var25 = sload(0x0);
+                        assert((0x1 < 0x6));
+                        var25 = ((sload(0x2) * var25) < var22);
+                        if (var25) 
+                        {
+                            if ((var23 < 0x5)) 
+                            {
+                                goto label_00005DC2;
+                            }
+                            else
+                            {
+                                goto label_00005DBA;
+                            }
+                        }
+                        else if (var25) 
+                        {
+label_00005DBA:
+                            var24 = 0x1;
+                            goto label_00005DC7;
+                        }
+                        else
+                        {
+label_00005DC2:
+                            var24 = 0x0;
+label_00005DC7:
+                            return(var24);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    function func_00005EB7() private return (var0)
+    {
+        mstore(0x40,0x600);
+        mstore(0x580,0x0);
+        mstore(0x5A0,0x0);
+        mstore(0x5C0,0x0);
+        mstore(0x5E0,0x0);
+        return(0x580);
+    }
+
+    function func_00001402() private return (var0)
+    {
+        var2 = mapping_0x20[uint160(uint160(msg.sender))].member_0x6;
+        var3 = (mapping_0x20[uint160(uint160(msg.sender))].member_0x6 > 0x0);
+        if ((mapping_0x20[uint160(uint160(msg.sender))].member_0x6 > 0x0)) 
+        {
+            if (var3) 
+            {
+label_000014D5:
+                if ((balance(uint160(this.address)) > var2)) 
+                {
+                    if ((0x0 > mapping_0x20[uint160(uint160(msg.sender))].member_0x6)) 
+                    {
+                        var3 = mapping_0x20[uint160(uint160(msg.sender))].member_0xA;
+                        var4 = func_000053C0(mapping_0x20[uint160(uint160(msg.sender))].member_0xB,mapping_0x20[uint160(uint160(msg.sender))].member_0xA);
+label_00001695:
+                        mapping_0x20[uint160(uint160(msg.sender))].member_0xB = var4;
+                        mapping_0x20[uint160(uint160(msg.sender))].member_0xA = 0x0;
+                        if ((0x0 > var3)) 
+                        {
+                            var4 = func_000053C0(mapping_0x20[uint160(uint160(msg.sender))].member_0x7,mapping_0x20[uint160(uint160(msg.sender))].member_0x6);
+label_000017DD:
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0x7 = var4;
+                            mapping_0x20[uint160(uint160(msg.sender))].member_0x6 = 0x0;
+                            if ((0x0 > var2)) 
+                            {
+                                var5 = sload(0x14);
+
+                                //ISSUE:WARNING:Block timestamp is referred.
+                                var6 = (block.timestamp - startTime);
+                                if (sload(0x14)) 
+                                {
+label_00001816:
+                                    temp86 = (var6 / var5);
+                                    var4 = func_000054B6(temp86);
+                                    return(var-1);
+                                }
+                                else
+                                {
+label_00001815:
+                                    throw();
+                                }
+                            }
+                            else
+                            {
+                                var3 = func_0000544A(msg.sender,var2);
+                                var5 = sload(0x14);
+
+                                //ISSUE:WARNING:Block timestamp is referred.
+                                var6 = (block.timestamp - startTime);
+                                if (sload(0x14)) 
+                                {
+                                    goto label_00001816;
+                                }
+                                else
+                                {
+                                    goto label_00001815;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            mstore(0x80,0xCDFDFE3F00000000000000000000000000000000000000000000000000000000);
+                            mstore(0x84,uint160(uint160(this.address)));
+                            mstore(0xA4,uint160(uint160(msg.sender)));
+                            mstore(0xC4,var3);
+                            var12 = uint160(uint160(sload(0x12)));
+                            require(extcodesize(uint160(uint160(sload(0x12)))));
+
+                            //ISSUE:COMMENT: External call: FUNC_CDFDFE3F(uint160(uint160(this.address)),uint160(uint160(msg.sender)),var3)
+                            var7 = var12.call(0x80,0x64);
+                            var7 = (var7 == 0);
+                            if (var7) 
+                            {
+                                returndatacopy(0x0,0x0,returndatasize);
+                                revert(0x0,returndatasize);
+                            }
+                            else
+                            {
+                                var4 = func_000053C0(mapping_0x20[uint160(uint160(msg.sender))].member_0x7,mapping_0x20[uint160(uint160(msg.sender))].member_0x6);
+                                goto label_000017DD;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        mstore(0x80,0x271292F500000000000000000000000000000000000000000000000000000000);
+                        mstore(0x84,uint160(uint160(msg.sender)));
+                        mstore(0xA4,mapping_0x20[uint160(uint160(msg.sender))].member_0x6);
+                        var11 = uint160(uint160(sload(0x12)));
+                        require(extcodesize(uint160(uint160(sload(0x12)))));
+
+                        //ISSUE:COMMENT: External call: FUNC_271292F5(uint160(uint160(msg.sender)),sload((0x6 + var1)))
+                        var6 = var11.call(0x80,0x44,0x80,0x20);
+                        var6 = (var6 == 0);
+                        if (var6) 
+                        {
+                            returndatacopy(0x0,0x0,returndatasize);
+                            revert(0x0,returndatasize);
+                        }
+                        else
+                        {
+                            var4 = returndatasize;
+                            require((0x20 < returndatasize));
+                            var3 = mapping_0x20[uint160(uint160(msg.sender))].member_0xA;
+                            var4 = func_000053C0(mapping_0x20[uint160(uint160(msg.sender))].member_0xB,mapping_0x20[uint160(uint160(msg.sender))].member_0xA);
+                            goto label_00001695;
+                        }
+                    }
+                }
+                else
+                {
+                    mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                    mstore(0x84,0x20);
+                    mstore(0xA4,0x12);
+                    mstore(0xC4,0x62616C616E6365206E6F7420656E6F7567680000000000000000000000000000);
+                    revert(0x80,0x64);
+                }
+            }
+            else
+            {
+label_00001468:
+                mstore(0x80,0x8C379A000000000000000000000000000000000000000000000000000000000);
+                mstore(0x84,0x20);
+                mstore(0xA4,0x4);
+                mstore(0xC4,0x4E6F6E6500000000000000000000000000000000000000000000000000000000);
+                revert(0x80,0x64);
+            }
+        }
+        else if ((mapping_0x20[uint160(uint160(msg.sender))].member_0xA > 0x0)) 
+        {
+            goto label_000014D5;
+        }
+        else
+        {
+            goto label_00001468;
+        }
+    }
+
+    function func_0000544A( uint256 arg0,uint256 arg1) private return (var0)
+    {
+        if ((uint160(arg0) == 0x0)) 
+        {
+            return(var3);
+        }
+        else
+        {
+            var11 = uint160(arg0).call.gas(((arg1 == 0) * 0x8FC)).value(arg1)(0x80,0x0);
+            if (var11) 
+            {
+                return(var3);
+            }
+            else
+            {
+                returndatacopy(0x0,0x0,returndatasize);
+                revert(0x0,returndatasize);
+            }
+        }
+    }
+
+    function func_00005DCD() private return (var0)
+    {
+        mstore(0x40,0x280);
+        callcodecopy(0x80,code.size,0x200);
+        return(0x80);
+    }
+
+    function main() public return ()
+    {
+        mstore(0x40,0x80);
+        if ((msg.data.length < 0x4)) 
+        {
+label_00000261:
+            if ((uint160(msg.sender) == uint160(uint160(sload(0x11))))) 
+            {
+                stop();
+            }
+            else if ((msg.value == 0x0)) 
+            {
+                var-1 = func_00001402();
+                goto label_000002E5;
+            }
+            else if ((msg.value == 0xE8D4A51000)) 
+            {
+                var-1 = func_00001828();
+label_000002E5:
+                stop();
+            }
+            else
+            {
+                stop();
+            }
+        }
+        else
+        {
+            var0 = (msg.data(0x0) / 0x100000000000000000000000000000000000000000000000000000000);
+
+            //ISSUE:COMMENT: Function FUNC_0ABC67B5()
+            if ((0xABC67B5 == (msg.data(0x0) / 0x100000000000000000000000000000000000000000000000000000000))) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                FUNC_0ABC67B5(uint160(msg.data(0x4)));
+                stop();
+            }
+
+            //ISSUE:COMMENT: Function FUNC_0EA901D2()
+            else if ((0xEA901D2 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                FUNC_0EA901D2(uint160(msg.data(0x4)));
+                var6 = 0x280;
+                var8 = 0x200;
+                var9 = 0x200;
+                var10 = 0x280;
+                var11 = 0x388;
+                var12 = 0x0;
+label_00000398:
+                if ((var9 < var12)) 
+                {
+                    temp127 = (var8 + var6);
+                    mstore(temp127,var2);
+                    mstore((0x20 + temp127),var3);
+                    mstore((0x20 + (0x20 + temp127)),var4);
+                    RETURN(0x280,((0x20 + (0x20 + (0x20 + temp127))) - 0x280));
+                }
+                else
+                {
+                    temp128 = mload((var11 + var12));
+                    mstore((var10 + var12),temp128);
+                    var12 = (var12 + 0x20);
+                    goto label_00000398;
+                }
+            }
+
+            //ISSUE:COMMENT: Function FUNC_18F6CA0A()
+            else if ((0x18F6CA0A == var0)) 
+            {
+                require(!msg.value);
+                FUNC_18F6CA0A();
+                stop();
+            }
+
+            //ISSUE:COMMENT: Function FUNC_1AA0DCF5()
+            else if ((0x1AA0DCF5 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                (var2,var3) = FUNC_1AA0DCF5(msg.data(0x4));
+                mstore(0x80,var2);
+                mstore(0xA0,var3);
+                RETURN(0x80,0x40);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_1E3A2137()
+            else if ((0x1E3A2137 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x40 < (msg.data.length - 0x4)));
+                var2 = FUNC_1E3A2137(msg.data(0x4),msg.data(0x24));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function setTokenAddress()
+            else if ((0x26A4E8D2 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                setTokenAddress(uint160(msg.data(0x4)));
+                stop();
+            }
+
+            //ISSUE:COMMENT: Function FUNC_2BC9D5A1()
+            else if ((0x2BC9D5A1 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                FUNC_2BC9D5A1(uint160(msg.data(0x4)));
+                stop();
+            }
+
+            //ISSUE:COMMENT: Function FUNC_2FE0BB63()
+            else if ((0x2FE0BB63 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x40 < (msg.data.length - 0x4)));
+                FUNC_2FE0BB63(uint160(msg.data(0x4)),msg.data(0x24));
+                stop();
+            }
+
+            //ISSUE:COMMENT: Function FUNC_30B7B765()
+            else if ((0x30B7B765 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_30B7B765(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function getUserInfoById()
+            else if ((0x31F01140 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                getUserInfoById(msg.data(0x4));
+                var5 = 0x300;
+                var6 = 0x300;
+                var8 = 0x200;
+                var9 = 0x200;
+                var10 = 0x300;
+                var11 = 0x626;
+                var12 = 0x0;
+label_00000636:
+                if ((var9 < var12)) 
+                {
+                    temp182 = (var8 + var6);
+                    mstore(temp182,var2);
+                    mstore((0x20 + temp182),var3);
+                    mstore((0x20 + (0x20 + temp182)),uint160(uint160(var4)));
+                    RETURN(0x300,((0x20 + (0x20 + (0x20 + temp182))) - 0x300));
+                }
+                else
+                {
+                    temp183 = mload((var11 + var12));
+                    mstore((var10 + var12),temp183);
+                    var12 = (var12 + 0x20);
+                    goto label_00000636;
+                }
+            }
+
+            //ISSUE:COMMENT: Function FUNC_3BC5F698()
+            else if ((0x3BC5F698 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = func_00002CEC(uint160(msg.data(0x4)));
+                mstore(0x80,0x6F4);
+                mstore(0xA0,var2);
+                RETURN(0x80,0x40);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_45F0A44F()
+            else if ((0x45F0A44F == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_45F0A44F(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_5086A435()
+            else if ((0x5086A435 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_5086A435(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_5FA040EE()
+            else if ((0x5FA040EE == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_5FA040EE(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function tokenAddr()
+            else if ((0x5FBE4D1D == var0)) 
+            {
+                require(!msg.value);
+                var2 = tokenAddr();
+                mstore(0x80,uint160(uint160(var2)));
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_63753E6D()
+            else if ((0x63753E6D == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_63753E6D(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function getUserInfo()
+            else if ((0x6386C1C7 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                getUserInfo(uint160(msg.data(0x4)));
+                var8 = 0x300;
+                var10 = 0x200;
+                var11 = 0x200;
+                var12 = 0x300;
+                var13 = 0x8F3;
+                var14 = 0x0;
+label_00000903:
+                if ((var11 < var14)) 
+                {
+                    temp261 = (var10 + var8);
+                    mstore(temp261,var2);
+                    mstore((0x20 + temp261),var3);
+                    mstore((0x20 + (0x20 + temp261)),var4);
+                    mstore((0x20 + (0x20 + (0x20 + temp261))),var5);
+                    mstore((0x20 + (0x20 + (0x20 + (0x20 + temp261)))),var6);
+                    RETURN(0x300,((0x20 + (0x20 + (0x20 + (0x20 + (0x20 + temp261))))) - 0x300));
+                }
+                else
+                {
+                    temp262 = mload((var13 + var14));
+                    mstore((var12 + var14),temp262);
+                    var14 = (var14 + 0x20);
+                    goto label_00000903;
+                }
+            }
+
+            //ISSUE:COMMENT: Function FUNC_67103200()
+            else if ((0x67103200 == var0)) 
+            {
+                require(!msg.value);
+                var2 = FUNC_67103200();
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_6B3C3465()
+            else if ((0x6B3C3465 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x40 < (msg.data.length - 0x4)));
+                var2 = FUNC_6B3C3465(msg.data(0x4),msg.data(0x24));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_708A7126()
+            else if ((0x708A7126 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x40 < (msg.data.length - 0x4)));
+                FUNC_708A7126(msg.data(0x4),msg.data(0x24));
+                stop();
+            }
+
+            //ISSUE:COMMENT: Function FUNC_7519952B()
+            else if ((0x7519952B == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_7519952B(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function startTime()
+            else if ((0x78E97925 == var0)) 
+            {
+                require(!msg.value);
+                var2 = startTime();
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_7DD657AF()
+            else if ((0x7DD657AF == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_7DD657AF(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_810EC5CB()
+            else if ((0x810EC5CB == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                temp278 = (0x4 + var3);
+                var2 = temp278;
+                var5 = msg.data(0x4);
+                require((0x100000000 > msg.data(0x4)));
+                var5 = (0x4 + var5);
+                require((var2 > (var5 + 0x20)));
+                var5 = msg.data(var5);
+                var4 = (0x20 + var5);
+                require(!((var5 > 0x100000000) | (((0x20 + var5) + (var5 * 0x20)) > var2)));
+                mstore(0x40,(0x80 + (0x20 + (0x20 * var5))));
+                mstore(0x80,var5);
+                calldatacopy(0xA0,var4,(0x20 * var5));
+                mstore((0xA0 + (0x20 * var5)),0x0);
+                FUNC_810EC5CB(0x80);
+                stop();
+            }
+
+            //ISSUE:COMMENT: Function FUNC_82883100()
+            else if ((0x82883100 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var1 = FUNC_82883100(msg.data(0x4));
+                mstore(0x80,var1);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function roundId()
+            else if ((0x8CD221C9 == var0)) 
+            {
+                require(!msg.value);
+                var2 = roundId();
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_8CD4DDA2()
+            else if ((0x8CD4DDA2 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_8CD4DDA2(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function owner()
+            else if ((0x8DA5CB5B == var0)) 
+            {
+                require(!msg.value);
+                var2 = owner();
+                mstore(0x80,uint160(uint160(var2)));
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function dev()
+            else if ((0x91CCA3DB == var0)) 
+            {
+                require(!msg.value);
+                var2 = dev();
+                mstore(0x80,uint160(uint160(var2)));
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_922D0F7C()
+            else if ((0x922D0F7C == var0)) 
+            {
+                require(!msg.value);
+                var2 = FUNC_922D0F7C();
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_97F929F7()
+            else if ((0x97F929F7 == var0)) 
+            {
+                require(!msg.value);
+                var2 = FUNC_97F929F7();
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_9BE6D491()
+            else if ((0x9BE6D491 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_9BE6D491(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_9FF95193()
+            else if ((0x9FF95193 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_9FF95193(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_A76E76A0()
+            else if ((0xA76E76A0 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_A76E76A0(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_ADB910CF()
+            else if ((0xADB910CF == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                FUNC_ADB910CF(msg.data(0x4));
+                mstore(0x80,uint160(uint160(msg.data(0x4))));
+                mstore(0xA0,var3);
+                mstore(0xC0,var4);
+                mstore(0xE0,var5);
+                RETURN(0x80,0x80);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_B7BFAED6()
+            else if ((0xB7BFAED6 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                temp305 = (0x4 + var3);
+                var2 = temp305;
+                var5 = msg.data(0x4);
+                require((0x100000000 > msg.data(0x4)));
+                var5 = (0x4 + var5);
+                require((var2 > (var5 + 0x20)));
+                var5 = msg.data(var5);
+                var4 = (0x20 + var5);
+                require(!((var5 > 0x100000000) | (((0x20 + var5) + (var5 * 0x20)) > var2)));
+                mstore(0x40,(0x80 + (0x20 + (0x20 * var5))));
+                mstore(0x80,var5);
+                calldatacopy(0xA0,var4,(0x20 * var5));
+                mstore((0xA0 + (0x20 * var5)),0x0);
+                FUNC_B7BFAED6(0x80);
+                stop();
+            }
+
+            //ISSUE:COMMENT: Function FUNC_BB2F9366()
+            else if ((0xBB2F9366 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_BB2F9366(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function stage()
+            else if ((0xC040E6B8 == var0)) 
+            {
+                require(!msg.value);
+                var2 = stage();
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_C51B08E3()
+            else if ((0xC51B08E3 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                FUNC_C51B08E3(msg.data(0x4));
+                mstore(0x80,msg.data(0x4));
+                mstore(0xA0,var3);
+                mstore(0xC0,var4);
+                mstore(0xE0,var5);
+                RETURN(0x80,0x80);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_C8ADAE4A()
+            else if ((0xC8ADAE4A == var0)) 
+            {
+                require(!msg.value);
+                var2 = FUNC_C8ADAE4A();
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_CB40BB5F()
+            else if ((0xCB40BB5F == var0)) 
+            {
+                require(!msg.value);
+                var0 = func_00001828();
+                stop();
+            }
+
+            //ISSUE:COMMENT: Function FUNC_CBE3B04B()
+            else if ((0xCBE3B04B == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_CBE3B04B(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_CDB0963E()
+            else if ((0xCDB0963E == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_CDB0963E(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_E0F0B56B()
+            else if ((0xE0F0B56B == var0)) 
+            {
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                FUNC_E0F0B56B(msg.data(0x4));
+                stop();
+            }
+
+            //ISSUE:COMMENT: Function FUNC_EA3B69FF()
+            else if ((0xEA3B69FF == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x40 < (msg.data.length - 0x4)));
+                FUNC_EA3B69FF(msg.data(0x4),msg.data(0x24));
+                stop();
+            }
+
+            //ISSUE:COMMENT: Function FUNC_EEF8EDA1()
+            else if ((0xEEF8EDA1 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_EEF8EDA1(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_F3A4CA86()
+            else if ((0xF3A4CA86 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x60 < (msg.data.length - 0x4)));
+                (var1,var2,var3) = FUNC_F3A4CA86(uint160(msg.data(0x4)),msg.data(0x24),msg.data(0x44));
+                mstore(0x80,var1);
+                mstore(0xA0,var2);
+                mstore(0xC0,var3);
+                RETURN(0x80,0x60);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_F514CE36()
+            else if ((0xF514CE36 == var0)) 
+            {
+                require(!msg.value);
+                var2 = FUNC_F514CE36();
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_F7630CE3()
+            else if ((0xF7630CE3 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                (var1,var2) = FUNC_F7630CE3(uint160(msg.data(0x4)));
+                mstore(0x300,var1);
+                mstore(0x320,var2);
+                RETURN(0x300,0x40);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_F92E04C0()
+            else if ((0xF92E04C0 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_F92E04C0(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+
+            //ISSUE:COMMENT: Function FUNC_FC5F6081()
+            else if ((0xFC5F6081 == var0)) 
+            {
+                require(!msg.value);
+                var3 = (msg.data.length - 0x4);
+                require((0x20 < (msg.data.length - 0x4)));
+                var2 = FUNC_FC5F6081(msg.data(0x4));
+                mstore(0x80,var2);
+                RETURN(0x80,0x20);
+            }
+            else
+            {
+                goto label_00000261;
+            }
+        }
+    }
+
+}
